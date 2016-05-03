@@ -1,12 +1,18 @@
+
+
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 
 import firebase from 'firebase';
 import angularFire from 'angularfire';
 
+import user from './modules/UserLogin';
+
+
 let App = angular.module('app', [
   'ui.router',
-  'firebase'
+  'firebase',
+  'tiy.user'
 ]);
 
 function config($urlRouterProvider) {

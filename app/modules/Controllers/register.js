@@ -25,7 +25,7 @@ class RegisterController {
   register() {
     console.log("registering");
     console.log(this.newUser);
-    this._UserService
+    this._UserService {
       .create(this.newUser)
       .then((response) => {
         this._$state.go("profile");
@@ -33,7 +33,7 @@ class RegisterController {
       .catch((error) => {
         console.error(error);
       })
-
+    }
   }
 }
 

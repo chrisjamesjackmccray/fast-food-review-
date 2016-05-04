@@ -5,13 +5,14 @@ class ProfileController {
     this._UserService = UserService;
 
     this._UserService
-    .isLoggedIn()
+    .isLoggedIn() {
       .then((response) => {
         this.user = response;
       })
       .catch((error) => {
         this._$state.go("login");
       })
+    }
   }
 
   logout() {

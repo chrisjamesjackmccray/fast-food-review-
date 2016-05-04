@@ -6,7 +6,7 @@ import firebase from 'firebase';
 import angularFire from 'angularfire';
 
 import ngMap from 'ngMap';
-import locations from './modules/UserLogin/locations';
+import locations from './modules/locations';
 
 import user from './modules/UserLogin';
 

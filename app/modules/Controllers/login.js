@@ -6,11 +6,12 @@ class LoginController {
   }
 
   login() {
-    this._UserService
+    this._UserService {
       .login(this.user)
       .then((response) => {
         this._$state.go("profile");
       });
+    }
   }
 }
 

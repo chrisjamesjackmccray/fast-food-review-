@@ -1,0 +1,22 @@
+.headbox {
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-left: 1px solid #eae8e8;
+  border-right: 1px solid #eae8e8; }
+  .headbox h4 {
+    text-align: center;
+    margin: 0 0 10px 0;
+    font-size: 3rem;
+    color: #eae8e8; }
+
+.map {
+  width: 100%;
+  height: 800px; }
+
+.locationsform {
+  margin: 0 0 5px 20px; }
+
+.locationsbutton {
+  cursor: pointer; }

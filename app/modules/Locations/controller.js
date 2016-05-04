@@ -1,8 +1,9 @@
 class LocationsController {
 
-  constructor(UserService, LocationsService) {
+  constructor(UserService, LocationsService, $state) {
     this._UserService = UserService;
     this._LocationsService = LocationsService;
+    this._$state = $state;
 
     this.newLocation = this._LocationsService.new();
     console.log(this.newLocation);
@@ -21,10 +22,8 @@ class LocationsController {
   }
 
   logout() {
-    this._UserService
-    .then((response) => {
-      this._$state.go("login");
-    });
+    this._UserService.logout();
+    this._$state.go("login");
   }
 
 

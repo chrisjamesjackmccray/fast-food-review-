@@ -1,0 +1,23 @@
+
+.title {
+  width: 400px;
+  height: 200px;
+  margin: 0 auto;
+  border-bottom: 2px solid lightgray;
+
+  .title:hover {
+    background-color: lightgray;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin: 0 0 0 140px;
+  }
+
+  .profilebutton {
+    width: 40px;
+    height: 20px;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+}

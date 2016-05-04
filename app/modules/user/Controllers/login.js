@@ -6,12 +6,19 @@ class LoginController {
   }
 
   login() {
-    this._UserService {
+    this._UserService
       .login(this.user)
       .then((response) => {
-        this._$state.go("profile");
+        this._$state.go("locations");
       });
-    }
+  }
+
+  logout() {
+    this._UserService
+      .logout(this.user)
+      .then((response) => {
+        this._$state.go("login");
+      });
   }
 }
 

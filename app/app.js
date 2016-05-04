@@ -6,7 +6,7 @@ import firebase from 'firebase';
 import angularFire from 'angularfire';
 
 // import ngMap from 'ngMap';
-// import locations from './modules/locations';
+import locations from './modules/Locations';
 
 import user from './modules/user';
 
@@ -14,8 +14,8 @@ import user from './modules/user';
 let App = angular.module('app', [
   'ui.router',
   'firebase',
-  'tiy.user'
-  // 'tiy.locations',
+  'tiy.user',
+  'tiy.locations',
   // 'ngMap',
 ]);
 

@@ -11,6 +11,7 @@ class LocationsController {
     .isLoggedIn()
       .then((response) => {
         this.user = response;
+        this.getCurrentLocation();
         this.locations = this._LocationsService.getLocations(this.user);
       })
 
@@ -18,6 +19,12 @@ class LocationsController {
         this._$state.go("login");
       });
 
+  }
+
+  getCurrentLocation() {
+    navigator.geolocation.getCurrentPosition((position) => {
+      console.log(position);
+    });
   }
 
   addLocation() {

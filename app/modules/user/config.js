@@ -1,11 +1,5 @@
 function config($stateProvider) {
   $stateProvider
-  .state('profile', {
-    url: '/',
-    controller: 'ProfileController as profileCtrl',
-    template: require('./views/profile.html')
-  })
-
   .state('login', {
     url: '/login',
     controller: 'LoginController as loginCtrl',

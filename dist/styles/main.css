@@ -29,20 +29,19 @@
   height: 800px; }
 
 .locationsform {
-  margin: 0 0 5px 100px; }
+  margin: 0 0 5px 10%;
+  height: 100px; }
 
 .locationsbutton {
   cursor: pointer;
-  background-color: #4c4c4c;
+  background-color: none;
   width: 10%;
-  height: 40%;
-  border-radius: 2px;
   color: silver;
   margin-left: 1.8%; }
 
 .logout {
   cursor: pointer;
-  background-color: #4c4c4c;
+  background-color: none;
   width: 10%;
   color: silver; }
 

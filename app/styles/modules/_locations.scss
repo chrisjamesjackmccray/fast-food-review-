@@ -1,6 +1,7 @@
 
 .headbox {
-  width: 500px;
+  width: 90%;
+  height: 150px;
   margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -10,9 +11,24 @@
   h4 {
     text-align: center;
     margin: 0 0 10px 0;
-    font-size: 3rem;
-    color: #eae8e8;
+    font-size: 4rem;
+    color: #41423d;
   }
+}
+
+.address {
+  width: 200px;
+  height: 30px;
+}
+
+.city {
+  width: 200px;
+  height: 30px;
+}
+
+.state {
+  width: 200px;
+  height: 30px;
 }
 
 .map {
@@ -21,9 +37,29 @@
 }
 
 .locationsform {
-  margin: 0 0 5px 20px;
+  margin: 0 0 5px 100px;
 }
 
 .locationsbutton {
   cursor: pointer;
+  background-color: #4c4c4c;
+  width: 10%;
+  height: 40%;
+  border-radius: 2px;
+  color: silver;
+  margin-left: 1.8%;
+}
+
+.logout {
+  cursor: pointer;
+  background-color: #4c4c4c;
+  width: 10%;
+  color: silver;
+}
+
+.main {
+  width: 80%;
+  height: 50%;
+  background-color: none;
+  margin: 0 auto;
 }

@@ -1,8 +1,8 @@
 class RegisterController {
 
-  // import 'es6-promise';
-  // import 'whatwg-fetch';
-  //
+  import 'es6-promise';
+  import 'whatwg-fetch';
+
   // navigator.geolocation.getCurrentPosition(function(position) {
   //   console.log(position);
   //   fetch(`http://api.openweathermap.org/data/2.5/forecast/daily?lat=${position.coords.latitude}&lon=${position.coords.longitude}&APPID=75d92f502972a0f9ea05c1163aa5cbf4&units=imperial`)
@@ -36,5 +36,7 @@ class RegisterController {
     }
   }
 }
+
+
 
 export default RegisterController;

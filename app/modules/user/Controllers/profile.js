@@ -19,6 +19,15 @@ class ProfileController {
     this._UserService.logout();
     this._$state.go("login");
   }
+
+  searchButton() {
+    this._UserService {
+      .SearchButton(this.user)
+      .then((response) => {
+        this._$state.go("locations");
+      });
+    }
+  }
 }
 
 export default ProfileController;

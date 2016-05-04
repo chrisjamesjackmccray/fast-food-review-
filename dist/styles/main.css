@@ -1,3 +1,38 @@
+body {
+  margin: 0;
+  padding: 0 0 0 0;
+  background-color: #2d2d2d; }
+
+.header {
+  margin: 0 auto;
+  width: 90%;
+  height: 20px;
+  background-color: #2D2D2D;
+  border-bottom: 1px solid #eae8e8; }
+
+.loginbox {
+  margin: 0 auto;
+  width: 50%;
+  height: 100px;
+  border-bottom: 1px solid lightgray; }
+  .loginbox .loginemail {
+    height: 30px;
+    margin-top: 3%;
+    width: 40%;
+    margin-left: 5%; }
+  .loginbox .loginpassword {
+    height: 30px;
+    margin-top: 3%;
+    width: 40%;
+    height: 20%; }
+  .loginbox .loginbutton {
+    margin-top: 3%;
+    float: right;
+    cursor: pointer;
+    background-color: none;
+    width: 10%;
+    color: #a5a5a5; }
+
 .headbox {
   width: 90%;
   height: 150px;
@@ -10,7 +45,7 @@
     text-align: center;
     margin: 0 0 10px 0;
     font-size: 4rem;
-    color: #41423d; }
+    color: #5d5e58; }
 
 .address {
   width: 200px;
@@ -36,14 +71,14 @@
   cursor: pointer;
   background-color: none;
   width: 10%;
-  color: silver;
+  color: #a5a5a5;
   margin-left: 1.8%; }
 
 .logout {
   cursor: pointer;
   background-color: none;
   width: 10%;
-  color: silver; }
+  color: #a5a5a5; }
 
 .main {
   width: 80%;

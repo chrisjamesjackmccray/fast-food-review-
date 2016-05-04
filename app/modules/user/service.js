@@ -37,7 +37,7 @@ class UserService {
   }
 
   logout() {
-    this.auth.$unauth();
+    this.auth.$unauth()
   }
 
   new() {

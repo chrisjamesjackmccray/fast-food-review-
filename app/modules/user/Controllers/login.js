@@ -12,14 +12,6 @@ class LoginController {
         this._$state.go("locations");
       });
   }
-
-  logout() {
-    this._UserService
-      .logout(this.user)
-      .then((response) => {
-        this._$state.go("login");
-      });
-  }
 }
 
 export default LoginController;

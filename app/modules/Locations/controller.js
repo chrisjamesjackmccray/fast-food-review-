@@ -18,8 +18,15 @@ class LocationsController {
       .catch((error) => {
         this._$state.go("login");
       });
-
   }
+
+  logout() {
+    this._UserService
+    .then((response) => {
+      this._$state.go("login");
+    });
+  }
+
 
   getCurrentLocation() {
     navigator.geolocation.getCurrentPosition((position) => {

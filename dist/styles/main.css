@@ -22,41 +22,6 @@ body {
   border-bottom: 1px solid lightgray;
   float: right; }
 
-.title {
-  width: 400px;
-  height: 200px;
-  margin: 0 auto;
-  border-bottom: 2px solid lightgray; }
-  .title .title:hover {
-    background-color: lightgray; }
-  .title h1 {
-    font-size: 3rem;
-    margin: 0 0 0 140px; }
-  .title .profilebutton {
-    width: 40px;
-    height: 20px;
-    margin: 0 auto;
-    cursor: pointer; }
-
-.registerdiv {
-  width: 400px;
-  height: 200px;
-  margin: 0 auto;
-  border: 2px solid lightgray; }
-  .registerdiv .registerinside {
-    width: 350px;
-    height: 100px;
-    margin: 40px 0 0 30px; }
-    .registerdiv .registerinside .registerbutton {
-      cursor: pointer; }
-
-.registerdiv:hover {
-  background-color: #efefef; }
-
-h3 {
-  margin: 0 0 0 110px;
-  font-size: 3rem; }
-
 .headbox {
   width: 500px;
   margin: 0 auto;

@@ -5,6 +5,9 @@ import uiRouter from 'angular-ui-router';
 import firebase from 'firebase';
 import angularFire from 'angularfire';
 
+import ngMap from 'ngMap';
+import locations from './modules/UserLogin/locations';
+
 import user from './modules/UserLogin';
 
 
@@ -12,6 +15,9 @@ let App = angular.module('app', [
   'ui.router',
   'firebase',
   'tiy.user'
+
+  // 'tiy.locations',
+  // 'ngMap',
 ]);
 
 function config($urlRouterProvider) {

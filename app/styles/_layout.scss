@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  padding: 0 0 0 0;
+  background-color: #2d2d2d;
+}
+
+
+.headermain {
+  width: 100%;
+  height: 50px;
+  margin: 0 0 0 0;
+  background-color: #5b5b5b;
+  background-image: url('http://giphy.com/gifs/ToMjGpGbmLRrAgwpv7q/html5');
+}
+
+
+
+
+.header {
+  width: 100%;
+  height: 20px;
+  margin: 0 0 0 0;
+  background-color: #2D2D2D;;
+  border-bottom: 1px solid #eae8e8;
+}
+
+// Start Register Styles
+
+
+.registerdiv {
+  width: 400px;
+  height: 200px;
+  margin: 0 auto;
+  border: 2px solid lightgray;
+
+  .registerinside {
+    width: 350px;
+    height: 100px;
+    margin: 40px 0 0 30px;
+
+    .registerbutton {
+      cursor: pointer;
+
+    }
+
+
+  }
+}
+.registerdiv:hover {
+  background-color: #efefef;
+}
+
+h3 {
+  margin: 0 0 0 110px;
+  font-size: 3rem;
+
+}
+
+// End Register Styles
+
+
+// Start Profile Styles
+
+.title {
+  width: 400px;
+  height: 200px;
+  margin: 0 auto;
+  border-bottom: 2px solid lightgray;
+
+  .title:hover {
+    background-color: lightgray;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin: 0 0 0 140px;
+  }
+
+  .profilebutton {
+    width: 40px;
+    height: 20px;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+}
+
+// End Profile Styles
+
+// Start Login Styles
+
+.loginbox {
+  width: 400px;
+  height: 100px;
+  border-bottom: 1px solid lightgray;
+  float: right;
+
+}
+
+// End Login Styles
+
+// Start Locations Styles
+
+.headbox {
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-left: 1px solid #eae8e8;
+  border-right: 1px solid #eae8e8;
+
+  h4 {
+    text-align: center;
+    margin: 0 0 10px 0;
+    font-size: 3rem;
+    color: #eae8e8;
+  }
+
+
+}
+
+.map {
+  width: 100%;
+  height: 800px;
+}
+
+.locationsform {
+  margin: 0 0 5px 20px;
+}
+
+.locationsbutton {
+  cursor: pointer;
+}

@@ -16,12 +16,10 @@ body {
   height: 100px;
   border-bottom: 1px solid lightgray; }
   .loginbox .loginemail {
-    height: 30px;
     margin-top: 3%;
     width: 40%;
     margin-left: 5%; }
   .loginbox .loginpassword {
-    height: 30px;
     margin-top: 3%;
     width: 40%;
     height: 20%; }
@@ -45,19 +43,25 @@ body {
     text-align: center;
     margin: 0 0 10px 0;
     font-size: 4rem;
-    color: #5d5e58; }
+    color: #e5e5e5; }
 
 .address {
   width: 200px;
-  height: 30px; }
+  height: 30px;
+  outline: none;
+  text-transform: uppercase; }
 
 .city {
   width: 200px;
-  height: 30px; }
+  height: 30px;
+  outline: none;
+  text-transform: uppercase; }
 
 .state {
   width: 200px;
-  height: 30px; }
+  height: 30px;
+  outline: none;
+  text-transform: uppercase; }
 
 .map {
   width: 100%;
@@ -71,17 +75,61 @@ body {
   cursor: pointer;
   background-color: none;
   width: 10%;
-  color: #a5a5a5;
+  color: black;
   margin-left: 1.8%; }
 
 .logout {
   cursor: pointer;
   background-color: none;
   width: 10%;
-  color: #a5a5a5; }
+  color: black; }
 
 .main {
   width: 80%;
   height: 50%;
   background-color: none;
   margin: 0 auto; }
+
+.map {
+  margin: 0 auto;
+  margin-bottom: 4%;
+  width: 90%;
+  box-shadow: 3px 2px 98px -7px rgba(0, 0, 0, 0.75); }
+
+.searchbox {
+  width: 400px;
+  height: 30px;
+  padding-left: 1%;
+  font-size: 20px; }
+
+.container {
+  width: 90%;
+  height: 170px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 2%;
+  color: #d8d8d8;
+  font-size: 2.7rem;
+  border-top: 1px solid #eae8e8;
+  padding-top: 11%;
+  cursor: pointer; }
+
+.container:hover {
+  transition: opacity 1s 1s ease;
+  background-color: #d8d8d8;
+  color: #2d2d2d;
+  box-shadow: 3px 2px 98px -7px rgba(0, 0, 0, 0.75); }
+
+.bottominstructions {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-size: 90px; }
+
+a {
+  text-decoration: none;
+  color: #2d2d2d; }
+
+a:hover {
+  color: #2d2d2d; }

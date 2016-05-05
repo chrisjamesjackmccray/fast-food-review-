@@ -4,6 +4,11 @@ function config($stateProvider) {
     url: '/',
     controller: 'LocationsController as locationsCtrl',
     template: require('./view.html')
+  })
+  .state("rate", {
+    url: '/rate/:id',
+    controller: 'rateController as rateCtrl',
+    template: require('./view.html')
   });
 }
 

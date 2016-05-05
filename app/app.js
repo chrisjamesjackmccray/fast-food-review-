@@ -16,7 +16,7 @@ let App = angular.module('app', [
   'firebase',
   'tiy.user',
   'tiy.locations',
-  // 'ngMap',
+  'ngMap',
 ]);
 
 function config($urlRouterProvider) {

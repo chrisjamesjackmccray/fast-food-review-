@@ -184,6 +184,7 @@ img {
   cursor: pointer;
   padding-left: 4%;
   padding-right: 4%;
+  text-shadow: black 1px 1px 1px;
 }
 
 @media screen and (min-width: 484px) {
@@ -200,6 +201,7 @@ img {
   color: #2d2d2d;
   box-shadow: 3px 2px 98px -7px rgba(0,0,0,0.75);
   transition: 0.5s;
+  text-shadow: black 1px 1px 1px;
 }
 
 .bottominstructions {

@@ -169,7 +169,8 @@ img {
   padding-top: 11%;
   cursor: pointer;
   padding-left: 4%;
-  padding-right: 4%; }
+  padding-right: 4%;
+  text-shadow: black 1px 1px 1px; }
 
 @media screen and (min-width: 484px) {
   .container {
@@ -181,7 +182,8 @@ img {
   border: 1px solid #eae8e8;
   color: #2d2d2d;
   box-shadow: 3px 2px 98px -7px rgba(0, 0, 0, 0.75);
-  transition: 0.5s; }
+  transition: 0.5s;
+  text-shadow: black 1px 1px 1px; }
 
 .bottominstructions {
   width: 90%;

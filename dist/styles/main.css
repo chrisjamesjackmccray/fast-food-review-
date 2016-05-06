@@ -33,7 +33,7 @@ body {
 
 .headbox {
   width: 90%;
-  height: 150px;
+  height: 360px;
   margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -45,7 +45,27 @@ body {
     text-align: center;
     margin: 0 0 10px 0;
     font-size: 4rem;
-    color: #e5e5e5; }
+    color: #e5e5e5;
+    text-shadow: black 3px 3px 3px; }
+
+@media screen and (min-width: 445px) {
+  .headbox {
+    height: 290px; } }
+
+@media screen and (min-width: 445px) and (min-width: 673px) {
+  .headbox {
+    height: 220px;
+    color: black; } }
+
+@media screen and (min-width: 445px) and (min-width: 681px) {
+  .headbox {
+    height: 220px;
+    color: black; } }
+
+@media screen and (min-width: 445px) and (min-width: 1285px) {
+  .headbox {
+    height: 150px;
+    color: black; } }
 
 .headbox:hover {
   border-left: 1px solid #d4396d;
@@ -79,25 +99,44 @@ img {
 
 .map {
   width: 100%;
-  height: 800px;
+  height: 350px;
   overflow-y: scroll; }
 
 .locationsform {
-  margin: 0 0 5px 10%;
+  margin: 0 0 5% 10%;
   height: 100px; }
 
 .locationsbutton {
   cursor: pointer;
   background-color: none;
-  width: 10%;
+  width: 20%;
+  height: 10%;
   color: black;
-  margin-left: 1.8%; }
+  margin-left: 14%; }
 
 .logout {
   cursor: pointer;
   background-color: none;
-  width: 10%;
+  width: 20%;
+  height: 10%;
   color: black; }
+
+@media screen and (min-width: 577px) {
+  .locationsbutton {
+    width: 18%; } }
+
+@media screen and (min-width: 577px) and (min-width: 577px) {
+  .logout {
+    width: 18%; } }
+
+@media screen and (min-width: 577px) and (min-width: 700px) {
+  br {
+    display: none;
+    margin-left: 1.8%; } }
+
+@media screen and (min-width: 577px) and (min-width: 700px) {
+  .locationsbutton {
+    margin-left: 1.8%; } }
 
 .main {
   width: 80%;
@@ -112,10 +151,11 @@ img {
   box-shadow: 3px 2px 98px -7px rgba(0, 0, 0, 0.75); }
 
 .searchbox {
-  width: 400px;
+  width: 50%;
   height: 30px;
   padding-left: 1%;
-  font-size: 20px; }
+  font-size: 20px;
+  margin-bottom: 2%; }
 
 .container {
   width: 82%;
@@ -147,18 +187,23 @@ img {
   width: 90%;
   margin: 0 auto;
   text-align: center;
-  color: white;
-  font-size: 90px;
+  color: #8c8c8c;
+  font-size: 52px;
   border-left: 1px solid #eae8e8;
   border-right: 1px solid #eae8e8;
   margin-bottom: 2%;
   padding-left: 4%;
-  padding-right: 4%; }
+  padding-right: 4%;
+  text-shadow: black 3px 3px 3px; }
 
 .bottominstructions:hover {
   border-left: 1px solid #d4396d;
   border-right: 1px solid #d4396d;
   transition: 0.5s; }
+
+@media screen and (min-width: 669px) {
+  .bottominstructions {
+    font-size: 90px; } }
 
 a {
   text-decoration: none;

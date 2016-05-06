@@ -15,6 +15,7 @@
     <form class="locationsform" ng-submit="locationsCtrl.search()">
        <img src="http://www.clker.com/cliparts/W/x/V/N/a/o/orange-pin-hi.png"/>
        <input class="searchbox" type="text" placeholder="Restaurant" ng-model="locationsCtrl.place">
+       <br>
        <input class="locationsbutton" type="submit" value="Submit">
        <input class="logout" type="button" value="Logout" ng-click="locationsCtrl.logout()">
     </form>
@@ -25,7 +26,7 @@
 
 
   <ng-map center="[{{ locationsCtrl.location.lat }}, {{ locationsCtrl.location.lng }}]" class="map"
-    zoom="12"
+    zoom="10"
     map-type-id="TERRAIN">
 
    <marker ng-repeat="place in locationsCtrl.places" position="[{{ place.geometry.location.lat() }}, {{ place.geometry.location.lng() }}]"></marker>

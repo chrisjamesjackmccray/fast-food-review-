@@ -38,12 +38,26 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
   border-left: 1px solid #eae8e8;
-  border-right: 1px solid #eae8e8; }
+  border-right: 1px solid #eae8e8;
+  padding-left: 4%;
+  padding-right: 4%; }
   .headbox h4 {
     text-align: center;
     margin: 0 0 10px 0;
     font-size: 4rem;
     color: #e5e5e5; }
+
+.headbox:hover {
+  border-left: 1px solid #d4396d;
+  border-right: 1px solid #d4396d;
+  transition: 0.5s; }
+
+img {
+  width: 45px;
+  float: left;
+  margin-right: 2%;
+  margin-left: -5%;
+  margin-top: 0.7px; }
 
 .address {
   width: 200px;
@@ -65,7 +79,8 @@ body {
 
 .map {
   width: 100%;
-  height: 800px; }
+  height: 800px;
+  overflow-y: scroll; }
 
 .locationsform {
   margin: 0 0 5px 10%;
@@ -103,8 +118,8 @@ body {
   font-size: 20px; }
 
 .container {
-  width: 90%;
-  height: 170px;
+  width: 82%;
+  height: 250px;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 2%;
@@ -112,20 +127,38 @@ body {
   font-size: 2.7rem;
   border-top: 1px solid #eae8e8;
   padding-top: 11%;
-  cursor: pointer; }
+  cursor: pointer;
+  padding-left: 4%;
+  padding-right: 4%; }
+
+@media screen and (min-width: 484px) {
+  .container {
+    height: 170px; } }
 
 .container:hover {
-  transition: opacity 1s 1s ease;
-  background-color: #d8d8d8;
+  opacity: 1;
+  background-color: #d4396d;
+  border: 1px solid #eae8e8;
   color: #2d2d2d;
-  box-shadow: 3px 2px 98px -7px rgba(0, 0, 0, 0.75); }
+  box-shadow: 3px 2px 98px -7px rgba(0, 0, 0, 0.75);
+  transition: 0.5s; }
 
 .bottominstructions {
   width: 90%;
   margin: 0 auto;
   text-align: center;
   color: white;
-  font-size: 90px; }
+  font-size: 90px;
+  border-left: 1px solid #eae8e8;
+  border-right: 1px solid #eae8e8;
+  margin-bottom: 2%;
+  padding-left: 4%;
+  padding-right: 4%; }
+
+.bottominstructions:hover {
+  border-left: 1px solid #d4396d;
+  border-right: 1px solid #d4396d;
+  transition: 0.5s; }
 
 a {
   text-decoration: none;

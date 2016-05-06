@@ -184,24 +184,32 @@ img {
   cursor: pointer;
   padding-left: 4%;
   padding-right: 4%;
-  text-shadow: black 1px 1px 1px;
+  overflow-y: scroll;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
 }
 
 @media screen and (min-width: 484px) {
   .container {
     height: 170px;
   }
+ @media screen and (min-width: 484px) {
+    .container:hover {
+      height: 180px;
+    }
+  }
 }
 
 .container:hover {
   opacity: 1;
+  width: 84%;
+  // height: 260px;
   background-color: #d4396d;
   border: 1px solid #eae8e8;
-  // background-color: #d8d8d8;
   color: #2d2d2d;
   box-shadow: 3px 2px 98px -7px rgba(0,0,0,0.75);
-  transition: 0.5s;
-  text-shadow: black 1px 1px 1px;
+  transition-duration: 0.5s;
+  border-radius: 30px;
 }
 
 .bottominstructions {

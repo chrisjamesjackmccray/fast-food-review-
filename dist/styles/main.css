@@ -262,9 +262,6 @@ select {
   width: 20%;
   height: 10%; }
 
-form {
-  width: 100%; }
-
 .averagesubmit {
   cursor: pointer;
   color: black; }

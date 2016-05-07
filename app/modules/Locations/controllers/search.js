@@ -1,7 +1,4 @@
-
-let app = angular.module('app', []);
-
-class searchController {
+class SearchController {
   constructor() {
     this.places = [];
     this.place = "";
@@ -43,5 +40,3 @@ class searchController {
     });
   }
 }
-
-let ctrl = app.controller('ExampleController', ExampleController);

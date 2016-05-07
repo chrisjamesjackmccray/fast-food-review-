@@ -1,0 +1,40 @@
+
+
+<div class="ratingbox">
+  <form ng-submit="rateCtrl.addRating()">
+    <div class="questiondiv">
+      <h1 class="question"> Order Wait Time </h1>
+      <select name="answers" ng-model="rateCtrl.rating.wait_time">
+        <option value="2"> 2 Min </option>
+        <option value="5"> 5 Min </option>
+        <option value="10"> 10 Min </option>
+        <option value="15"> 15 Min </option>
+      </select>
+      <br><br>
+    </div>
+
+    <div class="questiondiv">
+      <h1 class="question"> Customer Service </h1>
+      <select name="answers" ng-model="rateCtrl.rating.customer_service">
+        <option value="1"> Very Bad </option>
+        <option value="2"> Bad </option>
+        <option value="3"> Good </option>
+        <option value="4"> Very Good </option>
+      </select>
+      <br><br>
+    </div>
+
+    <div class="questiondiv">
+      <h1 class="question"> Food Stale/Hot </h1>
+
+        <select name="answers" ng-model="rateCtrl.rating.stale">
+          <option value="1"> Always </option>
+          <option value="2"> Sometimes </option>
+          <option value="3"> Rare </option>
+          <option value="4"> Not At All </option>
+        </select>
+        <input class="averagesubmit" type="submit">
+
+    </div>
+  </form>
+</div>

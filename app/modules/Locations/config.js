@@ -3,12 +3,12 @@ function config($stateProvider) {
   .state("locations", {
     url: '/',
     controller: 'LocationsController as locationsCtrl',
-    template: require('./view.html')
+    template: require('./views/list.html')
   })
   .state("rate", {
     url: '/rate/:id',
-    controller: 'rateController as rateCtrl',
-    template: require('./view.html')
+    controller: 'RateController as rateCtrl',
+    template: require('./views/rate.html')
   });
 }
 

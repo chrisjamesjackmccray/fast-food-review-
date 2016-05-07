@@ -36,6 +36,7 @@
 
   <h2 class="bottominstructions" ng-if="locationsCtrl.places.length > 0"> Click on a box to rate a Restaurant </h2>
 
+
   <a ui-sref="rate({ id: place.id })" ng-repeat="place in locationsCtrl.places">
     <div class="container">
       {{ place.name }}

@@ -1,27 +1,31 @@
-// .registerdiv {
-//   width: 400px;
-//   height: 200px;
-//   margin: 0 auto;
-//   border: 2px solid lightgray;
-//
-//   .registerinside {
-//     width: 350px;
-//     height: 100px;
-//     margin: 40px 0 0 30px;
-//
-//     .registerbutton {
-//       cursor: pointer;
-//
-//     }
-//   }
-// }
-//
-// .registerdiv:hover {
-//   background-color: #efefef;
-// }
-//
-// h3 {
-//   margin: 0 0 0 110px;
-//   font-size: 3rem;
-//
-// }
+.registerdiv {
+  width: 400px;
+  height: 200px;
+  margin: 0 auto;
+
+  .registerinside {
+    width: 350px;
+    height: 100px;
+    margin: 10px 0 0 30px;
+
+    .registerbutton {
+      cursor: pointer;
+
+    }
+  }
+}
+
+.registerdiv:hover {
+
+}
+
+h3 {
+  height: 80px;
+  text-align: center;
+  color: #8c8c8c;
+  font-size: 50px;
+  margin-bottom: 2%;
+  padding-left: 4%;
+  padding-right: 4%;
+  text-shadow: black 3px 3px 3px;
+}

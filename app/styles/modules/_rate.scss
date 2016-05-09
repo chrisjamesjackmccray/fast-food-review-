@@ -9,11 +9,29 @@
   height: 80px;
   text-align: center;
   color: #8c8c8c;
-  font-size: 52px;
+  font-size: 40px;
   margin-bottom: 2%;
   padding-left: 4%;
   padding-right: 4%;
   text-shadow: black 3px 3px 3px;
+}
+
+@media screen and (min-width: 646px) {
+  .question {
+    font-size: 45px;
+  }
+}
+
+@media screen and (min-width: 940px) {
+  .question {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .question {
+    font-size: 54px;
+  }
 }
 
 .questiondiv:hover .question {
@@ -22,12 +40,12 @@
 }
 
 .questiondiv {
-  margin-top: 5%;
   width: 100%;
   height: 200px;
   border-left: 1px solid #eae8e8;
   border-right: 1px solid #eae8e8;
   margin-bottom: 10%;
+  border-radius: 10px;
 }
 
 .questiondiv:hover {
@@ -41,10 +59,11 @@
 
 
 select {
-  margin-left: 34%;
+  margin-left: 37%;
   margin-right: 2%;
   width: 20%;
   height: 10%;
+  margin-top: 20px;
 }
 
 

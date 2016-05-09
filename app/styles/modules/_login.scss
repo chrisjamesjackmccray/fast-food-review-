@@ -1,8 +1,21 @@
 .loginbox {
   margin: 0 auto;
-  width: 50%;
+  width: 380px;
   height: 100px;
-  border-bottom: 1px solid lightgray;
+
+  .logintitle {
+    margin-top: 0;
+    height: 80px;
+    text-align: center;
+    color: #8c8c8c;
+    font-size: 50px;
+    margin-bottom: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+    text-shadow: black 3px 3px 3px;
+  }
+
+
 
   .loginemail {
     margin-top: 3%;
@@ -22,6 +35,6 @@
     cursor: pointer;
     background-color: none;
     width: 10%;
-    color: #a5a5a5;
+    color: black;
   }
 }

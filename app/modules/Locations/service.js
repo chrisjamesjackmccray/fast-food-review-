@@ -1,8 +1,11 @@
 class LocationsService {
-  constructor($firebaseArray, $firebaseObject) {
+  constructor($q, $firebaseArray, $firebaseObject) {
+    this._$q = $q;
     this.ref = new Firebase("https://29-auth-services.firebaseio.com/");
     this._$firebaseArray = $firebaseArray;
     this._$firebaseObject = $firebaseObject;
+
+    this.locations = $firebaseArray(this.ref.child('restaurants'));
   }
 
   getLocations(user) {
@@ -32,6 +35,86 @@ class LocationsService {
     return myRating.$save();
   }
 
+  avgWaitTime(id) {
+
+    return new this._$q((resolve, reject) => {
+
+      let totalWaitTime = 0;
+      let avg = 'Not Rated Yet';
+
+      let restaurant = this._$firebaseArray(this.ref.child('restaurants').child(id));
+
+      restaurant.$loaded()
+        .then((response) => {
+          response.forEach((rating) => {
+            console.log(rating);
+            totalWaitTime += Number(rating.wait_time)
+          });
+
+          avg = (totalWaitTime / response.length) + " minutes";
+          resolve(avg);
+          console.log(avg);
+        })
+        .catch((error) => {
+          reject(error);
+        })
+
+    })
+  }
+
+  avgCustomerService(id) {
+
+    return new this._$q((resolve, reject) => {
+
+      let totalCustomerService = 0;
+      let avg = 'Not Rated Yet';
+
+      let restaurant = this._$firebaseArray(this.ref.child('restaurants').child(id));
+
+      restaurant.$loaded()
+        .then((response) => {
+          response.forEach((rating) => {
+            console.log(rating);
+            totalCustomerService += Number(rating.customer_service)
+          });
+
+          avg = (totalCustomerService / response.length) + "";
+          resolve(avg);
+          console.log(avg);
+        })
+        .catch((error) => {
+          reject(error);
+        })
+
+    })
+  }
+
+  avgStale(id) {
+
+    return new this._$q((resolve, reject) => {
+
+      let totalStale = 0;
+      let avg = 'Not Rated Yet';
+
+      let restaurant = this._$firebaseArray(this.ref.child('restaurants').child(id));
+
+      restaurant.$loaded()
+        .then((response) => {
+          response.forEach((rating) => {
+            console.log(rating);
+            totalStale += Number(rating.stale)
+          });
+
+          avg = (totalStale / response.length) + "";
+          resolve(avg);
+          console.log(avg);
+        })
+        .catch((error) => {
+          reject(error);
+        })
+
+    })
+  }
 }
 
 export default LocationsService

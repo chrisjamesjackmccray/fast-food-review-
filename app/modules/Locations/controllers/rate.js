@@ -6,7 +6,7 @@ class RateController {
     this.id = $stateParams.id;
 
     console.log($stateParams);
-    
+
     this._UserService
     .isLoggedIn()
       .then((response) => {

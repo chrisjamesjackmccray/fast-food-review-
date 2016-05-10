@@ -5,9 +5,9 @@
   margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 20px;
-  border-left: 2px solid #eae8e8;
-  border-right: 2px solid #eae8e8;
-  border-radius: 10px;
+  border-left: 1px solid #eae8e8;
+  border-right: 1px solid #eae8e8;
+  border-radius: 5px;
   padding-left: 4%;
   padding-right: 4%;
 
@@ -121,7 +121,7 @@ img {
     }
   }
 
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 712px) {
     .thebreak {
       display: none;
       margin-left: 1.8%;

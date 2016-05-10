@@ -8,7 +8,7 @@ body {
   width: 90%;
   height: 20px;
   background-color: #2D2D2D;
-  border-bottom: 2px solid #eae8e8;
+  border-bottom: 1px solid #eae8e8;
   border-radius: 10px; }
 
 .loginbox {
@@ -68,9 +68,9 @@ h3 {
   margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 20px;
-  border-left: 2px solid #eae8e8;
-  border-right: 2px solid #eae8e8;
-  border-radius: 10px;
+  border-left: 1px solid #eae8e8;
+  border-right: 1px solid #eae8e8;
+  border-radius: 5px;
   padding-left: 4%;
   padding-right: 4%; }
   .headbox h4 {
@@ -151,7 +151,7 @@ img {
   .logout {
     width: 18%; } }
 
-@media screen and (min-width: 577px) and (min-width: 700px) {
+@media screen and (min-width: 577px) and (min-width: 712px) {
   .thebreak {
     display: none;
     margin-left: 1.8%; } }

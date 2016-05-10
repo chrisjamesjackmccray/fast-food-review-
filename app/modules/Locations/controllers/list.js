@@ -60,7 +60,8 @@ class LocationsController {
   calculateAverages() {
     this.places.forEach((place) => {
       this.avgWaitTime(place);
-      // this.avgStaleness(place);
+      this.avgStale(place);
+      this.avgCustomerService(place);
     });
   }
 
@@ -69,29 +70,16 @@ class LocationsController {
   avgStale(restaurant) {
     this._LocationsService.avgStale(restaurant.id)
       .then((response) => {
-        restaurant.avgWaitTime = response;
+        restaurant.avgStale = response;
       });
   }
-
-  calculateAverages() {
-    this.places.forEach((place) => {
-      this.avgStale(place);
-    });
-  }
-
 
 
   avgCustomerService(restaurant) {
     this._LocationsService.avgCustomerService(restaurant.id)
       .then((response) => {
-        restaurant.avgCostomerService = response;
+        restaurant.avgCustomerService = response;
       });
-  }
-
-  calculateAverages() {
-    this.places.forEach((place) => {
-      this.avgCustomerService(place);
-    });
   }
 
   search() {

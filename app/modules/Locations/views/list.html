@@ -15,7 +15,7 @@
     <form class="locationsform" ng-submit="locationsCtrl.search()">
        <img src="http://www.clker.com/cliparts/W/x/V/N/a/o/orange-pin-hi.png"/>
        <input class="searchbox" type="text" placeholder="Restaurant" ng-model="locationsCtrl.place">
-       <br>
+       <br class="thebreak">
        <input class="locationsbutton" type="submit" value="Submit">
        <input class="logout" type="button" value="Logout" ng-click="locationsCtrl.logout()">
     </form>
@@ -40,11 +40,16 @@
   <a ui-sref="rate({ id: place.id })" ng-repeat="place in locationsCtrl.places">
     <div class="container">
       {{ place.name }}
-      {{ place.vicinity }}
-      {{ place.avgWaitTime }}
-      {{ place.avgStale }}
-      {{ place.avgCustomerService }}
+      {{ place.vicinity }}<br>
+
+      <div class="containertwo">
+        Wait Time: {{ place.avgWaitTime }}<br>
+        Stale: {{ place.avgStale }}<br>
+        Customer Service: {{ place.avgCustomerService }}
+      </div>
+
     </div>
+
   </a>
 
 

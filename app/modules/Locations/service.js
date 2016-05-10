@@ -73,12 +73,32 @@ class LocationsService {
 
       restaurant.$loaded()
         .then((response) => {
-          response.forEach((rating) => {
-            console.log(rating);
-            totalCustomerService += Number(rating.customer_service)
-          });
 
-          avg = (totalCustomerService / response.length) + "";
+          if (response.length > 0) {
+            response.forEach((rating) => {
+              console.log(rating);
+              totalCustomerService += Number(rating.customer_service)
+            });
+
+            avg = (totalCustomerService / response.length);
+
+            if (avg === 4) {
+              avg = "Very Good"
+            }
+            else if (avg > 3) {
+              avg = "Good"
+            }
+            else if (avg > 2) {
+              avg = "Bad"
+            }
+            else {
+              avg = "Very Bad"
+            }
+          }
+          else {
+            avg = "Not rated yet"
+          }
+
           resolve(avg);
           console.log(avg);
         })
@@ -100,12 +120,32 @@ class LocationsService {
 
       restaurant.$loaded()
         .then((response) => {
-          response.forEach((rating) => {
-            console.log(rating);
-            totalStale += Number(rating.stale)
-          });
+          if (response.length > 0) {
+            response.forEach((rating) => {
+              console.log(rating);
+              totalStale += Number(rating.stale)
+            });
 
-          avg = (totalStale / response.length) + "";
+            avg = (totalStale / response.length);
+
+            if (avg === 4) {
+              avg = "Not at all"
+            }
+            else if (avg > 3) {
+              avg = "Sometimes"
+            }
+            else if (avg > 2) {
+              avg = "Rare"
+            }
+            else {
+              avg = "Not at all"
+            }
+          }
+          else {
+            avg = "Not rated yet"
+          }
+
+
           resolve(avg);
           console.log(avg);
         })

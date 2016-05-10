@@ -1,14 +1,16 @@
 
 .headbox {
-  width: 90%;
+  width: 85%;
   height: 360px;
   margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 20px;
-  border-left: 1px solid #eae8e8;
-  border-right: 1px solid #eae8e8;
+  border-left: 2px solid #eae8e8;
+  border-right: 2px solid #eae8e8;
+  border-radius: 10px;
   padding-left: 4%;
   padding-right: 4%;
+
 
   h4 {
     text-align: center;
@@ -19,26 +21,19 @@
   }
 }
 
-@media screen and (min-width: 445px) {
+@media screen and (min-width: 471px) {
   .headbox {
     height: 290px;
   }
 
-  @media screen and (min-width: 673px) {
+  @media screen and (min-width: 712px) {
     .headbox {
       height: 220px;
       color: black;
     }
   }
 
-  @media screen and (min-width: 681px) {
-    .headbox {
-      height: 220px;
-      color: black;
-    }
-  }
-
-  @media screen and (min-width: 1285px) {
+  @media screen and (min-width: 1361px) {
     .headbox {
       height: 150px;
       color: black;
@@ -47,9 +42,10 @@
 }
 
 .headbox:hover {
-  border-left: 1px solid #d4396d;
-  border-right: 1px solid #d4396d;
-  transition: 0.5s;
+  // border-left: 2px solid #eae8e8;
+  // border-right: 2px solid #eae8e8;
+  // transition: 0.2s;
+  // border-radius: 10px;
 }
 
 
@@ -126,7 +122,7 @@ img {
   }
 
   @media screen and (min-width: 700px) {
-    br {
+    .thebreak {
       display: none;
       margin-left: 1.8%;
     }
@@ -166,14 +162,14 @@ img {
 
 .container {
   width: 82%;
-  height: 250px;
+  height: 420px;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 2%;
   color: #d8d8d8;
   font-size: 2.7rem;
   border-top: 1px solid #eae8e8;
-  padding-top: 11%;
+  padding-top: 5%;
   cursor: pointer;
   padding-left: 4%;
   padding-right: 4%;
@@ -184,11 +180,29 @@ img {
 
 @media screen and (min-width: 484px) {
   .container {
-    height: 170px;
+    height: 320px;
   }
- @media screen and (min-width: 484px) {
+
+  @media screen and (min-width: 681px) {
+    .container {
+      height: 280px;
+    }
+  }
+
+  @media screen and (min-width: 863px) {
+    .container {
+      height: 250px;
+    }
+  }
+
+  @media screen and (min-width: 1285px) {
+    .container {
+      height: 230px;
+    }
+  }
+ @media screen and (min-width: 1285px) {
     .container:hover {
-      height: 180px;
+      height: 240px;
     }
   }
 }
@@ -197,12 +211,22 @@ img {
   opacity: 1;
   width: 84%;
   // height: 260px;
-  background-color: #d4396d;
+  background-color: #DDDCDA;
   border: 1px solid #eae8e8;
   color: #2d2d2d;
   box-shadow: 3px 2px 98px -7px rgba(0,0,0,0.75);
   transition-duration: 0.5s;
   border-radius: 30px;
+}
+
+.containertwo {
+  font-weight: 100;
+  font-family: sans-serif;
+  margin-top: 2%;
+  line-height: 40px;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  font-size: 20px;
 }
 
 .bottominstructions {
@@ -211,18 +235,19 @@ img {
   text-align: center;
   color: #8c8c8c;;
   font-size: 52px;
-  border-left: 1px solid #eae8e8;
-  border-right: 1px solid #eae8e8;
+  border-left: 2px solid #eae8e8;
+  border-right: 2px solid #eae8e8;
   margin-bottom: 2%;
   padding-left: 4%;
   padding-right: 4%;
+  border-radius: 10px;
   text-shadow: black 3px 3px 3px;
 }
 
 .bottominstructions:hover {
-  border-left: 1px solid #d4396d;
-  border-right: 1px solid #d4396d;
-  transition: 0.5s;
+  // border-left: 1px solid #d4396d;
+  // border-right: 1px solid #d4396d;
+  // transition: 0.2s;
 }
 
 @media screen and (min-width: 669px) {

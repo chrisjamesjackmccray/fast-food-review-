@@ -46,10 +46,32 @@ class LocationsService {
 
       restaurant.$loaded()
         .then((response) => {
-          response.forEach((rating) => {
-            console.log(rating);
-            totalWaitTime += Number(rating.wait_time)
-          });
+
+          if (response.length > 0) {
+            response.forEach((rating) => {
+              console.log(rating);
+              totalWaitTime += Number(rating.wait_time)
+            });
+
+            avg = (totalWaitTime / response.length);
+
+            if (avg === 2) {
+              avg = "2"
+            }
+            else if (avg > 5) {
+              avg = "5"
+            }
+            else if (avg > 10) {
+              avg = "10"
+            }
+            else {
+              avg = "15"
+            }
+          }
+          else {
+            avg = "Not rated yet"
+          }
+
 
           avg = (totalWaitTime / response.length) + " minutes";
           resolve(avg);

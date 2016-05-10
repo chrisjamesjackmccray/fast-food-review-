@@ -5,8 +5,8 @@
   margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 20px;
-  border-left: 1px solid #2D2D2D;
-  border-right: 1px solid #2D2D2D;
+  border-left: 1px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
   border-radius: 5px;
   padding-left: 4%;
   padding-right: 4%;
@@ -16,7 +16,7 @@
     text-align: center;
     margin: 0 0 10px 0;
     font-size: 4rem;
-    color: #333333;
+    color: #d8d8d8;
     text-shadow: black 2px 2px 2px;
   }
 }
@@ -149,7 +149,7 @@ img {
   margin: 0 auto;
   margin-bottom: 4%;
   width: 90%;
-  box-shadow: 3px 2px 98px -7px rgba(0,0,0,0.75);
+  // box-shadow: 1px 1px 20px -7px rgba(0,0,0,0.75);
 }
 
 .searchbox {
@@ -166,9 +166,9 @@ img {
   margin: 0 auto;
   text-align: center;
   margin-bottom: 2%;
-  color: #2D2D2D;
+  color: #FFFFFF;
   font-size: 2.7rem;
-  border-top: 1px solid #2D2D2D;
+  border-top: 1px solid #FFFFFF;
   padding-top: 5%;
   cursor: pointer;
   padding-left: 4%;
@@ -211,12 +211,13 @@ img {
   opacity: 1;
   width: 84%;
   // height: 260px;
-  background-color: bfbfbf;
+  background-color: #eae8e8;
   border: 1px solid #eae8e8;
-  color: #2d2d2d;
-  box-shadow: 3px 2px 98px -7px rgba(0,0,0,0.75);
+  color: #2D2D2D;
+  box-shadow: 3px 2px 40px -7px rgba(0,0,0,0.75);
   transition-duration: 0.5s;
   border-radius: 30px;
+  // opacity: 0.8;
 }
 
 .containertwo {
@@ -229,14 +230,19 @@ img {
   font-size: 20px;
 }
 
+.containertwo:hover {
+  color: black;
+  transition-duration: 0.5s;
+}
+
 .bottominstructions {
   width: 90%;
   margin: 0 auto;
   text-align: center;
-  color: #333333;
+  color: #898989;
   font-size: 52px;
-  border-left: 2px solid #2D2D2D;
-  border-right: 2px solid #2D2D2D;
+  border-left: 2px solid #FFFFFF;
+  border-right: 2px solid #FFFFFF;
   margin-bottom: 2%;
   padding-left: 4%;
   padding-right: 4%;

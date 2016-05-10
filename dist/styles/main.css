@@ -1,13 +1,13 @@
 body {
   margin: 0;
   padding: 0 0 0 0;
-  background-color: #E9EAED; }
+  background-color: #2D2D2D; }
 
 .header {
   margin: 0 auto;
   width: 90%;
   height: 20px;
-  background-color: #E9EAED;
+  background-color: none;
   border-bottom: 1px solid #2D2D2D;
   border-radius: 10px; }
 
@@ -68,8 +68,8 @@ h3 {
   margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 20px;
-  border-left: 1px solid #2D2D2D;
-  border-right: 1px solid #2D2D2D;
+  border-left: 1px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
   border-radius: 5px;
   padding-left: 4%;
   padding-right: 4%; }
@@ -77,7 +77,7 @@ h3 {
     text-align: center;
     margin: 0 0 10px 0;
     font-size: 4rem;
-    color: #333333;
+    color: #d8d8d8;
     text-shadow: black 2px 2px 2px; }
 
 @media screen and (min-width: 471px) {
@@ -169,8 +169,7 @@ img {
 .map {
   margin: 0 auto;
   margin-bottom: 4%;
-  width: 90%;
-  box-shadow: 3px 2px 98px -7px rgba(0, 0, 0, 0.75); }
+  width: 90%; }
 
 .searchbox {
   width: 50%;
@@ -185,9 +184,9 @@ img {
   margin: 0 auto;
   text-align: center;
   margin-bottom: 2%;
-  color: #2D2D2D;
+  color: #FFFFFF;
   font-size: 2.7rem;
-  border-top: 1px solid #2D2D2D;
+  border-top: 1px solid #FFFFFF;
   padding-top: 5%;
   cursor: pointer;
   padding-left: 4%;
@@ -219,10 +218,10 @@ img {
 .container:hover {
   opacity: 1;
   width: 84%;
-  background-color: bfbfbf;
+  background-color: #eae8e8;
   border: 1px solid #eae8e8;
-  color: #2d2d2d;
-  box-shadow: 3px 2px 98px -7px rgba(0, 0, 0, 0.75);
+  color: #2D2D2D;
+  box-shadow: 3px 2px 40px -7px rgba(0, 0, 0, 0.75);
   transition-duration: 0.5s;
   border-radius: 30px; }
 
@@ -235,14 +234,18 @@ img {
   font-size: 1rem;
   font-size: 20px; }
 
+.containertwo:hover {
+  color: black;
+  transition-duration: 0.5s; }
+
 .bottominstructions {
   width: 90%;
   margin: 0 auto;
   text-align: center;
-  color: #333333;
+  color: #898989;
   font-size: 52px;
-  border-left: 2px solid #2D2D2D;
-  border-right: 2px solid #2D2D2D;
+  border-left: 2px solid #FFFFFF;
+  border-right: 2px solid #FFFFFF;
   margin-bottom: 2%;
   padding-left: 4%;
   padding-right: 4%;
@@ -268,7 +271,7 @@ a:hover {
 .question {
   height: 80px;
   text-align: center;
-  color: #333333;
+  color: #605f5f;
   font-size: 40px;
   margin-bottom: 2%;
   padding-left: 4%;
@@ -289,16 +292,16 @@ a:hover {
 
 .questiondiv:hover .question {
   transition: 0.5s;
-  color: #bcbcbc; }
+  color: #898989; }
 
 .questiondivtop:hover .question {
   transition: 0.5s;
-  color: #bcbcbc; }
+  color: #898989; }
 
 .questiondiv {
   width: 100%;
   height: 200px;
-  border-top: 1px solid #2D2D2D;
+  border-top: 1px solid #FFFFFF;
   margin-bottom: 10%;
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
@@ -307,7 +310,7 @@ a:hover {
 .questiondivtop {
   width: 100%;
   height: 200px;
-  border-top: 1px solid #2D2D2D;
+  border-top: 1px solid #FFFFFF;
   margin-bottom: 10%;
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
@@ -317,18 +320,20 @@ a:hover {
 .questiondivtop:hover {
   border-top: 1px solid #bcbcbc;
   border-bottom: 1px solid #2D2D2D;
-  border-radius: 40px;
+  border-radius: 30px;
   height: 210px;
   transition: 0.3s;
-  box-shadow: 0px 3px 30px -7px rgba(0, 0, 0, 0.75); }
+  background-color: #161616;
+  box-shadow: 0px 3px 20px -7px rgba(0, 0, 0, 0.75); }
 
 .questiondiv:hover {
   border-top: 1px solid #bcbcbc;
   border-bottom: 1px solid #2D2D2D;
-  border-radius: 40px;
+  border-radius: 30px;
   height: 210px;
+  background-color: #161616;
   transition: 0.3s;
-  box-shadow: 0px 3px 30px -7px rgba(0, 0, 0, 0.75); }
+  box-shadow: 0px 3px 50px -7px rgba(0, 0, 0, 0.75); }
 
 select {
   margin-left: 37%;

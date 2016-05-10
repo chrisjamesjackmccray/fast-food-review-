@@ -49,6 +49,7 @@ class LocationsService {
 
           if (response.length > 0) {
             response.forEach((rating) => {
+              console.log("wait time");
               console.log(rating);
               totalWaitTime += Number(rating.wait_time)
             });
@@ -67,13 +68,14 @@ class LocationsService {
             else {
               avg = "15"
             }
+
+            avg = (totalWaitTime / response.length) + " minutes";
           }
           else {
             avg = "Not rated yet"
           }
 
 
-          avg = (totalWaitTime / response.length) + " minutes";
           resolve(avg);
           console.log(avg);
         })

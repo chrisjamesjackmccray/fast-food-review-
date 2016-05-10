@@ -1,7 +1,7 @@
 class SearchController {
-  constructor() {
+  constructor($stateParams) {
     this.places = [];
-    this.place = "";
+    this.place = $stateParams.search;
     this.getCurrentLocation();
   }
 
@@ -9,8 +9,6 @@ class SearchController {
     this.map = new google.maps.Map(document.querySelector('#map'), {
       center: this.location,
       zoom: 15
-      // mapTypeId: google.maps.MapTypeId.ROADMAP,
-      // mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
     });
 
     this.placeService = new google.maps.places.PlacesService(this.map);

@@ -1,15 +1,16 @@
 class LocationsController {
 
-  constructor(UserService, LocationsService, $state, NgMap, $scope) {
+  constructor(UserService, LocationsService, $state, NgMap, $scope, $stateParams) {
     this._NgMap = NgMap;
     this._UserService = UserService;
     this._LocationsService = LocationsService;
     this._$state = $state;
     this._$scope = $scope;
+    this._$stateParams = $stateParams;
 
 
     this.places = [];
-    this.place = "";
+    this.place = $stateParams.search;
     this.location = { lat: "", lng: "" };
 
     this.newLocation = this._LocationsService.new();
@@ -39,6 +40,9 @@ class LocationsController {
 
       this._NgMap.getMap().then((map) => {
         this.placeService = new google.maps.places.PlacesService(map);
+        if (this._$stateParams.search) {
+          this.search();
+        }
       });
 
     });

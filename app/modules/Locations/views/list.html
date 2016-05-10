@@ -26,8 +26,7 @@
 
 
   <ng-map center="[{{ locationsCtrl.location.lat }}, {{ locationsCtrl.location.lng }}]" class="map"
-    zoom="10"
-    map-type-id="TERRAIN">
+    zoom="10">
 
    <marker ng-repeat="place in locationsCtrl.places" position="[{{ place.geometry.location.lat() }}, {{ place.geometry.location.lng() }}]"></marker>
 
@@ -37,7 +36,7 @@
   <h2 class="bottominstructions" ng-if="locationsCtrl.places.length > 0"> Click on a box to rate a Restaurant </h2>
 
 
-  <a ui-sref="rate({ id: place.id })" ng-repeat="place in locationsCtrl.places">
+  <a ui-sref="rate({ id: place.id, search: locationsCtrl.place })" ng-repeat="place in locationsCtrl.places">
     <div class="container">
       {{ place.name }}
       {{ place.vicinity }}<br>

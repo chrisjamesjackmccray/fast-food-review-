@@ -98,13 +98,13 @@ h3 {
     text-shadow: black 3px 3px 3px; }
     .headbox h4 .breakh4 {
       display: block; }
+  @media screen and (min-width: 549px) {
+    .headbox h4 {
+      font-size: 5rem; } }
   @media screen and (min-width: 683px) {
     .headbox h4 .breakh4 {
       display: none;
       font-size: 7rem; } }
-  @media screen and (min-width: 549px) {
-    .headbox h4 {
-      font-size: 5rem; } }
 
 @media screen and (min-width: 471px) {
   .headbox {

@@ -24,18 +24,18 @@
     }
   }
 
+  @media screen and (min-width: 549px) {
+    h4 {
+      font-size: 5rem;
+    }
+  }
+
   @media screen and (min-width: 683px) {
     h4 {
       .breakh4 {
         display: none;
         font-size: 7rem;
       }
-    }
-  }
-
-  @media screen and (min-width: 549px) {
-    h4 {
-      font-size: 5rem;
     }
   }
 

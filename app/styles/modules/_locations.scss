@@ -1,30 +1,59 @@
 
 .headbox {
-  width: 85%;
-  height: 360px;
+  width: 90%;
+  height: 320px;
   margin: 0 auto;
-  margin-top: 20px;
   margin-bottom: 20px;
-  border-left: 1px solid #FFFFFF;
-  border-right: 1px solid #FFFFFF;
+  // border-left: 5px solid black;
+  // border-right: 5px solid black;
   border-radius: 5px;
-  padding-left: 4%;
-  padding-right: 4%;
+  // padding-left: 4%;
+  // padding-right: 4%;
 
 
   h4 {
     text-align: center;
     margin: 0 0 10px 0;
-    font-size: 4rem;
-    color: #d8d8d8;
-    text-shadow: black 2px 2px 2px;
+    font-size: 5rem;
+    padding-top: 60px;
+    padding-bottom: -60;
+    color: #FFFFFF;
+    text-shadow: black 3px 3px 3px;
+    .breakh4 {
+      display: block;
+    }
   }
+
+  @media screen and (min-width: 683px) {
+    h4 {
+      .breakh4 {
+        display: none;
+        font-size: 7rem;
+      }
+    }
+  }
+
+  @media screen and (min-width: 549px) {
+    h4 {
+      font-size: 5rem;
+    }
+  }
+
 }
+
+
 
 @media screen and (min-width: 471px) {
   .headbox {
-    height: 290px;
+    height: 320px;
   }
+
+  @media screen and (min-width: 652px) {
+    .headbox {
+      height: 220px;
+    }
+  }
+
 
   @media screen and (min-width: 712px) {
     .headbox {
@@ -33,21 +62,18 @@
     }
   }
 
+  @media screen and (min-width: 935px) {
+    .headbox {
+      height: 150px;
+    }
+  }
+
   @media screen and (min-width: 1361px) {
     .headbox {
       height: 150px;
-      color: black;
     }
   }
 }
-
-.headbox:hover {
-  // border-left: 2px solid #eae8e8;
-  // border-right: 2px solid #eae8e8;
-  // transition: 0.2s;
-  // border-radius: 10px;
-}
-
 
 
 img {
@@ -80,16 +106,17 @@ img {
 }
 
 .map {
-  width: 100%;
-  height: 350px;
+  width: 70%;
+  height: 400px;
+  margin: 0 auto;
   overflow-y: scroll;
+  box-shadow: 3px 2px 40px -7px rgba(0,0,0,0.75);
 }
-
-
 
 .locationsform {
   margin: 0 0 5% 10%;
   height: 100px;
+  margin-bottom: 0;
 }
 
 
@@ -99,7 +126,13 @@ img {
   width: 20%;
   height: 10%;
   color: black;
-  margin-left: 14%;
+  margin-left: 11%;
+}
+
+@media screen and (min-width: 652px ) {
+ .locationsbutton {
+   margin-left: 0%;
+ }
 }
 
 .logout {
@@ -121,7 +154,7 @@ img {
     }
   }
 
-  @media screen and (min-width: 712px) {
+  @media screen and (min-width: 652px) {
     .thebreak {
       display: none;
       margin-left: 1.8%;
@@ -139,43 +172,38 @@ img {
 
 
 .main {
-  width: 80%;
-  height: 50%;
-  background-color: none;
-  margin: 0 auto;
-}
-
-.map {
-  margin: 0 auto;
-  margin-bottom: 4%;
-  width: 90%;
-  // box-shadow: 1px 1px 20px -7px rgba(0,0,0,0.75);
+  width: 100%;
+  height: 1080px;
+  margin-bottom: 0;
+  margin: 0;
+  background-image: url("http://cdn-media-2.lifehack.org/wp-content/files/2015/02/Food.jpg");
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .searchbox {
   width: 50%;
-  height: 30px;
+  height: 40px;
   padding-left: 1%;
   font-size: 20px;
   margin-bottom: 2%;
 }
 
 .container {
-  width: 82%;
-  height: 420px;
+  width: 100%;
+  height: 350px;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 2%;
-  color: #FFFFFF;
+  color: #eae8e8;
   font-size: 2.7rem;
   border-top: 1px solid #FFFFFF;
   padding-top: 5%;
   cursor: pointer;
-  padding-left: 4%;
-  padding-right: 4%;
   overflow-y: scroll;
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (min-width: 484px) {
@@ -209,15 +237,15 @@ img {
 
 .container:hover {
   opacity: 1;
-  width: 84%;
-  // height: 260px;
+  width: 95%;
   background-color: #eae8e8;
   border: 1px solid #eae8e8;
-  color: #2D2D2D;
+  color: #eae8e8;
   box-shadow: 3px 2px 40px -7px rgba(0,0,0,0.75);
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
   border-radius: 30px;
-  // opacity: 0.8;
+  background-color: rgba(0, 0, 0, .7);
+
 }
 
 .containertwo {
@@ -231,34 +259,74 @@ img {
 }
 
 .containertwo:hover {
-  color: black;
+  color: #eae8e8;
   transition-duration: 0.5s;
 }
 
 .bottominstructions {
-  width: 90%;
+  width: 100%;
+  height: 300px;
   margin: 0 auto;
   text-align: center;
-  color: #898989;
-  font-size: 52px;
-  border-left: 2px solid #FFFFFF;
-  border-right: 2px solid #FFFFFF;
-  margin-bottom: 2%;
-  padding-left: 4%;
-  padding-right: 4%;
-  border-radius: 10px;
+  // border-left: 5px solid #eae8e8;
+  // border-right: 5px solid #eae8e8;
+  color: white;
+  font-size: 74px;
+  padding-top: 40px;
   text-shadow: black 3px 3px 3px;
+  // background-color: black;
+  background-image: url("http://sanmanuel.com/sites/default/files/featured-images/14574_SWGrill_1440x500_1.jpg");
+  background-position: 80% 65%;
+  font-weight: bolder;
+  font-stretch: ultra-expanded;
+  text-decoration-style: double;
 }
 
-.bottominstructions:hover {
-  // border-left: 1px solid #d4396d;
-  // border-right: 1px solid #d4396d;
-  // transition: 0.2s;
+.searchresults {
+  background-image: url("http://pic.1fotonin.com/data/wallpapers/23/WDF_708201.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-y: scroll;
+  background-attachment: fixed;
+}
+
+@media screen and (min-width: 555px) {
+  .bottominstructions {
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 669px) {
+  .bottominstructions {
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 675px) {
+  .bottominstructions {
+    height: 250px;
+  }
 }
 
 @media screen and (min-width: 669px) {
   .bottominstructions {
     font-size: 90px;
+  }
+}
+
+@media screen and (min-width: 828px) {
+  .bottominstructions {
+    height: 400px;
+    font-size: 90px;
+    font-size: 7rem;
+  }
+}
+
+@media screen and (min-width: 840px) {
+  .bottominstructions {
+    height: 340px;
+    font-size: 8rem;
+    margin-bottom: 0;
   }
 }
 

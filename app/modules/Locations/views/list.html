@@ -3,14 +3,9 @@
   <div class="headermain">
 
   </div>
-
-  <div class="header">
-
-  </div>
-
   <div class="headbox">
 
-    <h4> Search For a Fast Food Franchise </h4>
+    <h4> Search <br class="breakh4"> For a Restaurant </h4>
 
     <form class="locationsform" ng-submit="locationsCtrl.search()">
        <img src="http://www.clker.com/cliparts/W/x/V/N/a/o/orange-pin-hi.png"/>
@@ -20,37 +15,43 @@
        <input class="logout" type="button" value="Logout" ng-click="locationsCtrl.logout()">
     </form>
   </div>
-
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
   <br>
 
+  <div class="mapdiv">
+    <ng-map center="[{{ locationsCtrl.location.lat }}, {{ locationsCtrl.location.lng }}]" class="map"
+      zoom="10">
 
+     <marker ng-repeat="place in locationsCtrl.places" position="[{{ place.geometry.location.lat() }}, {{ place.geometry.location.lng() }}]"></marker>
 
-  <ng-map center="[{{ locationsCtrl.location.lat }}, {{ locationsCtrl.location.lng }}]" class="map"
-    zoom="10">
+    </ng-map>
+  </div>
 
-   <marker ng-repeat="place in locationsCtrl.places" position="[{{ place.geometry.location.lat() }}, {{ place.geometry.location.lng() }}]"></marker>
+</div>
 
-  </ng-map>
 
 
   <h2 class="bottominstructions" ng-if="locationsCtrl.places.length > 0"> Click on a box to rate a Restaurant </h2>
+  <div class="searchresults">
 
 
-  <a ui-sref="rate({ id: place.id, search: locationsCtrl.place })" ng-repeat="place in locationsCtrl.places">
-    <div class="container">
-      {{ place.name }}
-      {{ place.vicinity }}<br>
 
-      <div class="containertwo">
-        Wait Time: {{ place.avgWaitTime }}<br>
-        Stale: {{ place.avgStale }}<br>
-        Customer Service: {{ place.avgCustomerService }}
+    <a ui-sref="rate({ id: place.id, search: locationsCtrl.place })" ng-repeat="place in locationsCtrl.places">
+      <div class="container">
+        {{ place.name }}
+        {{ place.vicinity }}<br>
+
+        <div class="containertwo">
+          Wait Time: {{ place.avgWaitTime }}<br>
+          Stale: {{ place.avgStale }}<br>
+          Customer Service: {{ place.avgCustomerService }}
+        </div>
+
       </div>
 
-    </div>
-
-  </a>
-
-
-
-</div>
+    </a>
+  </div>

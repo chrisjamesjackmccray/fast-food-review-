@@ -10,22 +10,46 @@ body {
   background-color: black;
   background-color: rgba(0, 0, 0, 0.9);
   z-index: 99;
-  top: 0;
-  left: 0; }
+  transition: all 0.2s ease-in-out; }
+  .nav .navhome {
+    font-size: 30px;
+    transition: 0.2s; }
+  .nav .navhome:hover {
+    color: #D65848;
+    letter-spacing: 1px; }
+  .nav .navrestaurants {
+    font-size: 30px;
+    transition: 0.2s; }
+  .nav .navrestaurants:hover {
+    color: #D65848;
+    letter-spacing: 1px; }
+  .nav .navrate {
+    font-size: 30px;
+    transition: 0.2s; }
+  .nav .navrate:hover {
+    color: #D65848;
+    letter-spacing: 1px; }
+  .nav .navabout {
+    font-size: 30px;
+    transition: 0.2s; }
+  .nav .navabout:hover {
+    color: #D65848;
+    letter-spacing: 1px; }
   .nav .ul {
-    width: 50%;
+    width: 700px;
     float: left;
-    margin-top: 0;
+    margin-top: 0 auto;
     margin-bottom: 0;
     list-style-type: none; }
     .nav .ul li {
       float: left;
       color: white;
-      margin-right: 12%;
-      margin-top: 2.7%;
-      font-size: 20px; }
+      margin-right: 40px;
+      margin-top: -5px;
+      font-size: 20px;
+      text-shadow: black 2px 2px 2px; }
       .nav .ul li a {
-        color: white; }
+        color: #F58D89; }
 
 .li:hover {
   color: white;
@@ -85,7 +109,8 @@ h3 {
 input[type="submit"], input[type="button"] {
   height: 40px;
   width: 80px;
-  background-color: #FFFFFF;
+  background-color: #D65848;
+  color: #FFFFFF;
   border: none;
   outline: none;
   border-radius: 10px;
@@ -94,7 +119,7 @@ input[type="submit"], input[type="button"] {
   box-shadow: black 1px 1px 1px; }
 
 input[type="submit"]:hover, input[type="button"]:hover {
-  background-color: #BFBEAF;
+  background-color: #F58D89;
   color: white;
   transition: 0.2s; }
 
@@ -181,7 +206,7 @@ img {
 
 .map {
   width: 70%;
-  height: 300px;
+  height: 280px;
   margin: 0 auto;
   overflow-y: scroll;
   box-shadow: 3px 2px 40px -7px rgba(0, 0, 0, 0.75);
@@ -360,7 +385,8 @@ img {
   overflow-y: scroll;
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
-  background-color: rgba(0, 0, 0, 0.2); }
+  background-color: rgba(0, 0, 0, 0.2);
+  text-shadow: black 2px 2px 2px; }
 
 @media screen and (min-width: 484px) {
   .container {
@@ -391,7 +417,8 @@ img {
   box-shadow: 3px 2px 40px -7px rgba(0, 0, 0, 0.75);
   transition-duration: 0.3s;
   border-radius: 30px;
-  background-color: rgba(0, 0, 0, 0.7); }
+  background-color: rgba(0, 0, 0, 0.7);
+  text-shadow: none; }
 
 .containertwo {
   font-weight: 100;
@@ -472,7 +499,14 @@ a:hover {
 .ratingbox {
   width: 100%;
   height: 800px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background-image: url("../assets/images/wine.jpeg");
+  background-size: cover;
+  background-attachment: fixed; }
+
+.clearfix {
+  overflow: auto;
+  zoom: 1; }
 
 .question {
   height: 80px;
@@ -482,8 +516,9 @@ a:hover {
   margin-bottom: 2%;
   padding-left: 4%;
   padding-right: 4%;
-  text-shadow: black 2px 2px 2px;
-  transition: all 0.3s ease-in-out; }
+  text-shadow: black 3px 3px 3px;
+  transition: all 0.3s ease-in-out;
+  margin-top: 50px; }
 
 @media screen and (min-width: 646px) {
   .question {
@@ -491,23 +526,27 @@ a:hover {
 
 @media screen and (min-width: 940px) {
   .question {
-    font-size: 5rem; } }
+    font-size: 5rem;
+    margin-top: 40px; } }
 
 @media screen and (min-width: 1200px) {
   .question {
-    font-size: 7rem; } }
+    font-size: 7rem;
+    margin-top: 20px; } }
 
 .questiondiv:hover .question {
   transition: 0.5s;
-  color: #898989; }
+  color: #F58D89;
+  cursor: default; }
 
 .questiondivtop:hover .question {
   transition: 0.5s;
-  color: #898989; }
+  color: #F58D89;
+  cursor: default; }
 
 .questiondiv {
   width: 100%;
-  height: 350px;
+  height: 300px;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 2%;
@@ -515,15 +554,14 @@ a:hover {
   color: #eae8e8;
   border-top: 1px solid #FFFFFF;
   padding-top: 5%;
-  cursor: pointer;
   overflow-y: scroll;
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
-  background-color: rgba(0, 0, 0, 0.2); }
+  background-color: rgba(0, 0, 0, 0.5); }
 
 .questiondivtop {
   width: 100%;
-  height: 350px;
+  height: 300px;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 2%;
@@ -531,24 +569,154 @@ a:hover {
   font-size: 2.7rem;
   border-top: 1px solid #FFFFFF;
   padding-top: 70px;
-  cursor: pointer;
   overflow-y: scroll;
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
-  background-color: rgba(0, 0, 0, 0.2); }
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 90px; }
 
 .questiondivtop:hover {
-  width: 95%; }
+  width: 95%;
+  height: 290px;
+  background-color: rgba(0, 0, 0, 0.4); }
 
 .questiondiv:hover {
-  width: 95%; }
+  width: 95%;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 295px; }
 
 select {
   margin-right: 2%;
   width: 20%;
   height: 10%;
-  margin-top: 20px; }
+  margin-top: 20px;
+  cursor: pointer; }
 
 .averagesubmit {
   cursor: pointer;
   color: black; }
+
+.leftbox {
+  float: left;
+  width: calc(100% - 20px);
+  height: 400px;
+  background-color: gray;
+  padding: 10px;
+  transition: all 0.2s ease-in-out; }
+
+@media screen and (min-width: 900px) {
+  .leftbox {
+    width: calc(50% - 20px);
+    height: 800px; } }
+
+.abouthead {
+  color: white;
+  margin-top: 80px;
+  font-size: 2rem;
+  text-shadow: black 2px 2px 2px;
+  text-align: center;
+  transition: all 0.2s ease-in-out; }
+
+@media screen and (min-width: 500px) {
+  .abouthead {
+    font-size: 2rem; } }
+
+@media screen and (min-width: 600px) {
+  .abouthead {
+    font-size: 3rem; } }
+
+@media screen and (min-width: 700px) {
+  .abouthead {
+    font-size: 3.5rem; } }
+
+@media screen and (min-width: 800px) {
+  .abouthead {
+    font-size: 4rem; } }
+
+@media screen and (min-width: 900px) {
+  .abouthead {
+    font-size: 2.5rem; } }
+
+@media screen and (min-width: 1000px) {
+  .abouthead {
+    font-size: 2.8rem; } }
+
+@media screen and (min-width: 1050px) {
+  .abouthead {
+    font-size: 2.9rem; } }
+
+@media screen and (min-width: 10100px) {
+  .abouthead {
+    font-size: 3rem; } }
+
+@media screen and (min-width: 10150px) {
+  .abouthead {
+    font-size: 3.1rem; } }
+
+@media screen and (min-width: 10200px) {
+  .abouthead {
+    font-size: 3.2rem; } }
+
+@media screen and (min-width: 10250px) {
+  .abouthead {
+    font-size: 3.2rem; } }
+
+@media screen and (min-width: 10300px) {
+  .abouthead {
+    font-size: 3.3rem; } }
+
+@media screen and (min-width: 10350px) {
+  .abouthead {
+    font-size: 3.4rem; } }
+
+@media screen and (min-width: 10400px) {
+  .abouthead {
+    font-size: 3.5rem; } }
+
+@media screen and (min-width: 10450px) {
+  .abouthead {
+    font-size: 3.6rem; } }
+
+@media screen and (min-width: 10500px) {
+  .abouthead {
+    font-size: 3.7rem; } }
+
+@media screen and (min-width: 10550px) {
+  .abouthead {
+    font-size: 3.8rem; } }
+
+@media screen and (min-width: 10600px) {
+  .abouthead {
+    font-size: 3.9rem; } }
+
+@media screen and (min-width: 10650px) {
+  .abouthead {
+    font-size: 4rem; } }
+
+@media screen and (min-width: 10700px) {
+  .abouthead {
+    font-size: 4.1rem; } }
+
+@media screen and (min-width: 10750px) {
+  .abouthead {
+    font-size: 4.2rem; } }
+
+@media screen and (min-width: 10800px) {
+  .abouthead {
+    font-size: 4.3rem; } }
+
+@media screen and (min-width: 10850px) {
+  .abouthead {
+    font-size: 4.4rem; } }
+
+@media screen and (min-width: 10900px) {
+  .abouthead {
+    font-size: 4.5rem; } }
+
+@media screen and (min-width: 10950px) {
+  .abouthead {
+    font-size: 4.6rem; } }
+
+@media screen and (min-width: 1370px) {
+  .abouthead {
+    font-size: 4rem; } }

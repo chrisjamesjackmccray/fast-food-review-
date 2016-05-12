@@ -6,7 +6,6 @@ import firebase from 'firebase';
 import angularFire from 'angularfire';
 import angularScroll from 'angular-scroll';
 
-// import ngMap from 'ngMap';
 import locations from './modules/Locations';
 
 import user from './modules/user';

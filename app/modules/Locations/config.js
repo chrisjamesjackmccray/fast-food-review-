@@ -9,6 +9,11 @@ function config($stateProvider) {
     url: '/rate/:id?search',
     controller: 'RateController as rateCtrl',
     template: require('./views/rate.html')
+  })
+  .state("about", {
+    url: '/about',
+    controller: 'AboutController as aboutCtrl',
+    template: require('./views/about.html')
   });
 }
 

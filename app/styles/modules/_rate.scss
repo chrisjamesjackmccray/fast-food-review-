@@ -3,7 +3,16 @@
   width: 100%;
   height: 800px;
   margin: 0 auto;
+  background-image: url("../assets/images/wine.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+
 }
+
+  .clearfix {
+    overflow: auto;
+    zoom: 1;
+  }
 
 
 .question {
@@ -14,8 +23,9 @@
   margin-bottom: 2%;
   padding-left: 4%;
   padding-right: 4%;
-  text-shadow: black 2px 2px 2px;
+  text-shadow: black 3px 3px 3px;
   transition: all 0.3s ease-in-out;
+  margin-top: 50px;
 }
 
 @media screen and (min-width: 646px) {
@@ -27,28 +37,32 @@
 @media screen and (min-width: 940px) {
   .question {
     font-size: 5rem;
+    margin-top: 40px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .question {
     font-size: 7rem;
+    margin-top: 20px;
   }
 }
 
 .questiondiv:hover .question {
   transition: 0.5s;
-  color: #898989;
+  color: #F58D89;
+  cursor: default;
 }
 
 .questiondivtop:hover .question {
   transition: 0.5s;
-  color: #898989;
+  color: #F58D89;
+  cursor: default;
 }
 
 .questiondiv {
   width: 100%;
-  height: 350px;
+  height: 300px;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 2%;
@@ -56,16 +70,15 @@
   color: #eae8e8;
   border-top: 1px solid #FFFFFF;
   padding-top: 5%;
-  cursor: pointer;
   overflow-y: scroll;
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .questiondivtop {
   width: 100%;
-  height: 350px;
+  height: 300px;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 2%;
@@ -73,19 +86,23 @@
   font-size: 2.7rem;
   border-top: 1px solid #FFFFFF;
   padding-top: 70px;
-  cursor: pointer;
   overflow-y: scroll;
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 90px;
 }
 
 .questiondivtop:hover {
   width: 95%;
+  height: 290px;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .questiondiv:hover {
   width: 95%;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 295px;
 }
 
 
@@ -94,6 +111,7 @@ select {
   width: 20%;
   height: 10%;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 

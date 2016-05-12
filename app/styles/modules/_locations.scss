@@ -1,7 +1,8 @@
 input[type="submit"], input[type="button"] {
   height: 40px;
   width: 80px;
-  background-color: #FFFFFF;
+  background-color: #D65848;
+  color: #FFFFFF;
   border: none;
   outline: none;
   border-radius: 10px;
@@ -11,7 +12,7 @@ input[type="submit"], input[type="button"] {
 }
 
 input[type="submit"]:hover, input[type="button"]:hover {
-  background-color: #BFBEAF;
+  background-color: #F58D89;
   color: white;
   transition: 0.2s;
 }
@@ -142,7 +143,7 @@ img {
 
 .map {
   width: 70%;
-  height: 300px;
+  height: 280px;
   margin: 0 auto;
   overflow-y: scroll;
   box-shadow: 3px 2px 40px -7px rgba(0,0,0,0.75);
@@ -396,6 +397,7 @@ img {
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
   background-color: rgba(0, 0, 0, 0.2);
+  text-shadow: black 2px 2px 2px;
   // margin-top: 30px;
 }
 
@@ -438,6 +440,7 @@ img {
   transition-duration: 0.3s;
   border-radius: 30px;
   background-color: rgba(0, 0, 0, .7);
+  text-shadow: none;
 
 }
 

@@ -82,6 +82,22 @@ h3 {
   padding-right: 4%;
   text-shadow: black 3px 3px 3px; }
 
+input[type="submit"], input[type="button"] {
+  height: 40px;
+  width: 80px;
+  background-color: #FFFFFF;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 17px;
+  transition: all 0.2s ease-in-out;
+  box-shadow: black 1px 1px 1px; }
+
+input[type="submit"]:hover, input[type="button"]:hover {
+  background-color: #BFBEAF;
+  color: white;
+  transition: 0.2s; }
+
 .headbox {
   width: 90%;
   height: 320px;
@@ -102,9 +118,11 @@ h3 {
     .headbox h4 {
       font-size: 5rem; } }
   @media screen and (min-width: 683px) {
-    .headbox h4 .breakh4 {
-      display: none;
+    .headbox h4 {
       font-size: 7rem; } }
+  @media screen and (min-width: 683px) {
+    .headbox h4 .breakh4 {
+      display: none; } }
 
 @media screen and (min-width: 471px) {
   .headbox {
@@ -114,12 +132,21 @@ h3 {
   .headbox {
     height: 220px; } }
 
+@media screen and (min-width: 471px) and (min-width: 683px) {
+  .headbox {
+    height: 300px; } }
+
 @media screen and (min-width: 471px) and (min-width: 712px) {
   .headbox {
     height: 220px;
+    height: 300px;
     color: black; } }
 
 @media screen and (min-width: 471px) and (min-width: 935px) {
+  .headbox {
+    height: 300px; } }
+
+@media screen and (min-width: 471px) and (min-width: 1308px) {
   .headbox {
     height: 150px; } }
 
@@ -154,15 +181,117 @@ img {
 
 .map {
   width: 70%;
-  height: 400px;
+  height: 300px;
   margin: 0 auto;
   overflow-y: scroll;
-  box-shadow: 3px 2px 40px -7px rgba(0, 0, 0, 0.75); }
+  box-shadow: 3px 2px 40px -7px rgba(0, 0, 0, 0.75);
+  transition: all 0.2s ease-in-out; }
+
+@media screen and (min-width: 652px) {
+  .map {
+    height: 400px; } }
+
+.undermaptext {
+  width: 100%;
+  height: 100px;
+  margin: 0 auto;
+  margin-top: 3%;
+  text-align: center; }
+  .undermaptext .noresults {
+    text-align: center;
+    margin: 0 0 10px 0;
+    font-size: 2rem;
+    color: #FFFFFF;
+    text-shadow: black 2px 2px 2px;
+    margin-top: -1%;
+    transition: all 0.2s ease-in-out; }
+  .undermaptext .clickforresults {
+    text-align: center;
+    margin: 0 0 10px 0;
+    font-size: 2rem;
+    color: #FFFFFF;
+    text-shadow: black 2px 2px 2px;
+    margin-top: -1%;
+    transition: all 0.2s ease-in-out; }
+  .undermaptext .clickforresults:hover {
+    font-size: 2.2rem;
+    transition: 0.2s; }
 
 .locationsform {
   margin: 0 0 5% 10%;
-  height: 100px;
-  margin-bottom: 0; }
+  margin-bottom: 100px; }
+
+@media screen and (min-width: 610px) {
+  .locationsform {
+    margin: 0 0 5% 11%; } }
+
+@media screen and (min-width: 630px) {
+  .locationsform {
+    margin: 0 0 5% 13%; } }
+
+@media screen and (min-width: 652px) {
+  .locationsform {
+    margin: 0 0 5% 10%; } }
+
+@media screen and (min-width: 810px) {
+  .locationsform {
+    margin: 0 0 5% 11%; } }
+
+@media screen and (min-width: 830px) {
+  .locationsform {
+    margin: 0 0 5% 12%; } }
+
+@media screen and (min-width: 850px) {
+  .locationsform {
+    margin: 0 0 5% 13%; } }
+
+@media screen and (min-width: 870px) {
+  .locationsform {
+    margin: 0 0 5% 14%; } }
+
+@media screen and (min-width: 890px) {
+  .locationsform {
+    margin: 0 0 5% 15%; } }
+
+@media screen and (min-width: 910px) {
+  .locationsform {
+    margin: 0 0 5% 16%; } }
+
+@media screen and (min-width: 930px) {
+  .locationsform {
+    margin: 0 0 5% 17%; } }
+
+@media screen and (min-width: 950px) {
+  .locationsform {
+    margin: 0 0 5% 18%; } }
+
+@media screen and (min-width: 970px) {
+  .locationsform {
+    margin: 0 0 5% 19%; } }
+
+@media screen and (min-width: 990px) {
+  .locationsform {
+    margin: 0 0 5% 20%; } }
+
+@media screen and (min-width: 1010px) {
+  .locationsform {
+    margin: 0 0 5% 21%; } }
+
+@media screen and (min-width: 1030px) {
+  .locationsform {
+    margin: 0 0 5% 22%; } }
+
+@media screen and (min-width: 1050px) {
+  .locationsform {
+    margin: 0 0 5% 23%; } }
+
+@media screen and (min-width: 1090px) {
+  .locationsform {
+    margin: 0 0 5% 25%; } }
+
+@media screen and (min-width: 1308px) {
+  .locationsform {
+    margin: 0 0 5% 10%; } }
 
 .locationsbutton {
   cursor: pointer;
@@ -200,12 +329,12 @@ img {
   .locationsbutton {
     margin-left: 1.8%; } }
 
-.main {
+#homesection {
   width: 100%;
   height: 1080px;
   margin-bottom: 0;
   margin: 0;
-  background-image: url("http://cdn-media-2.lifehack.org/wp-content/files/2015/02/Food.jpg");
+  background-image: url("../assets/images/Food.jpg");
   background-size: cover;
   background-attachment: fixed; }
 
@@ -214,7 +343,8 @@ img {
   height: 40px;
   padding-left: 1%;
   font-size: 20px;
-  margin-bottom: 2%; }
+  margin-bottom: 2%;
+  transition: all 0.2s ease-in-out; }
 
 .container {
   width: 100%;
@@ -276,7 +406,7 @@ img {
   color: #eae8e8;
   transition-duration: 0.5s; }
 
-.bottominstructions {
+#bottominstructions {
   width: 100%;
   height: 300px;
   margin: 0 auto;
@@ -285,44 +415,50 @@ img {
   font-size: 74px;
   padding-top: 40px;
   text-shadow: black 3px 3px 3px;
-  background-image: url("http://sanmanuel.com/sites/default/files/featured-images/14574_SWGrill_1440x500_1.jpg");
+  background-image: url("../assets/images/plate.jpg");
   background-position: 80% 65%;
   font-weight: bolder;
   font-stretch: ultra-expanded;
   text-decoration-style: double; }
 
-.searchresults {
-  background-image: url("http://pic.1fotonin.com/data/wallpapers/23/WDF_708201.jpg");
+#searchresults {
+  background-image: url("../assets/images/WDF_708201.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   overflow-y: scroll;
   background-attachment: fixed; }
 
 @media screen and (min-width: 555px) {
-  .bottominstructions {
+  #bottominstructions {
     height: 200px; } }
 
 @media screen and (min-width: 669px) {
-  .bottominstructions {
+  #bottominstructions {
     height: 300px; } }
 
 @media screen and (min-width: 675px) {
-  .bottominstructions {
+  #bottominstructions {
     height: 250px; } }
 
 @media screen and (min-width: 669px) {
-  .bottominstructions {
+  #bottominstructions {
     font-size: 90px; } }
 
 @media screen and (min-width: 828px) {
-  .bottominstructions {
+  #bottominstructions {
     height: 400px;
     font-size: 90px;
     font-size: 7rem; } }
 
 @media screen and (min-width: 840px) {
-  .bottominstructions {
-    height: 340px;
+  #bottominstructions {
+    height: 430px;
+    font-size: 8rem;
+    margin-bottom: 0; } }
+
+@media screen and (min-width: 960px) {
+  #bottominstructions {
+    height: 300px;
     font-size: 8rem;
     margin-bottom: 0; } }
 
@@ -334,7 +470,7 @@ a:hover {
   color: #2d2d2d; }
 
 .ratingbox {
-  width: 50%;
+  width: 100%;
   height: 800px;
   margin: 0 auto; }
 
@@ -342,23 +478,24 @@ a:hover {
   height: 80px;
   text-align: center;
   color: #605f5f;
-  font-size: 40px;
+  font-size: 3rem;
   margin-bottom: 2%;
   padding-left: 4%;
   padding-right: 4%;
-  text-shadow: black 2px 2px 2px; }
+  text-shadow: black 2px 2px 2px;
+  transition: all 0.3s ease-in-out; }
 
 @media screen and (min-width: 646px) {
   .question {
-    font-size: 45px; } }
+    font-size: 4rem; } }
 
 @media screen and (min-width: 940px) {
   .question {
-    font-size: 50px; } }
+    font-size: 5rem; } }
 
 @media screen and (min-width: 1200px) {
   .question {
-    font-size: 54px; } }
+    font-size: 7rem; } }
 
 .questiondiv:hover .question {
   transition: 0.5s;
@@ -370,43 +507,43 @@ a:hover {
 
 .questiondiv {
   width: 100%;
-  height: 200px;
+  height: 350px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 2%;
+  font-size: 2.7rem;
+  color: #eae8e8;
   border-top: 1px solid #FFFFFF;
-  margin-bottom: 10%;
+  padding-top: 5%;
+  cursor: pointer;
+  overflow-y: scroll;
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
-  margin: 0 0 0 0; }
+  background-color: rgba(0, 0, 0, 0.2); }
 
 .questiondivtop {
   width: 100%;
-  height: 200px;
+  height: 350px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 2%;
+  color: #eae8e8;
+  font-size: 2.7rem;
   border-top: 1px solid #FFFFFF;
-  margin-bottom: 10%;
+  padding-top: 70px;
+  cursor: pointer;
+  overflow-y: scroll;
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
-  margin: 0 0 0 0;
-  margin-top: 70px; }
+  background-color: rgba(0, 0, 0, 0.2); }
 
 .questiondivtop:hover {
-  border-top: 1px solid #bcbcbc;
-  border-bottom: 1px solid #2D2D2D;
-  border-radius: 30px;
-  height: 210px;
-  transition: 0.3s;
-  background-color: #161616;
-  box-shadow: 0px 3px 20px -7px rgba(0, 0, 0, 0.75); }
+  width: 95%; }
 
 .questiondiv:hover {
-  border-top: 1px solid #bcbcbc;
-  border-bottom: 1px solid #2D2D2D;
-  border-radius: 30px;
-  height: 210px;
-  background-color: #161616;
-  transition: 0.3s;
-  box-shadow: 0px 3px 50px -7px rgba(0, 0, 0, 0.75); }
+  width: 95%; }
 
 select {
-  margin-left: 37%;
   margin-right: 2%;
   width: 20%;
   height: 10%;

@@ -1,3 +1,21 @@
+input[type="submit"], input[type="button"] {
+  height: 40px;
+  width: 80px;
+  background-color: #FFFFFF;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 17px;
+  transition: all 0.2s ease-in-out;
+  box-shadow: black 1px 1px 1px;
+}
+
+input[type="submit"]:hover, input[type="button"]:hover {
+  background-color: #BFBEAF;
+  color: white;
+  transition: 0.2s;
+}
+
 
 .headbox {
   width: 90%;
@@ -32,13 +50,17 @@
 
   @media screen and (min-width: 683px) {
     h4 {
-      .breakh4 {
-        display: none;
-        font-size: 7rem;
-      }
+      font-size: 7rem;
     }
   }
 
+  @media screen and (min-width: 683px) {
+    h4 {
+      .breakh4 {
+        display: none;
+      }
+    }
+  }
 }
 
 
@@ -54,15 +76,28 @@
     }
   }
 
+  @media screen and (min-width: 683px) {
+    .headbox {
+      height: 300px;
+    }
+  }
+
 
   @media screen and (min-width: 712px) {
     .headbox {
       height: 220px;
+      height: 300px;
       color: black;
     }
   }
 
   @media screen and (min-width: 935px) {
+    .headbox {
+      height: 300px;
+    }
+  }
+
+  @media screen and (min-width: 1308px) {
     .headbox {
       height: 150px;
     }
@@ -107,17 +142,171 @@ img {
 
 .map {
   width: 70%;
-  height: 400px;
+  height: 300px;
   margin: 0 auto;
   overflow-y: scroll;
   box-shadow: 3px 2px 40px -7px rgba(0,0,0,0.75);
+  transition: all 0.2s ease-in-out;
+}
+
+@media screen and (min-width: 652px) {
+  .map {
+    height: 400px;
+  }
+}
+
+.undermaptext {
+  width: 100%;
+  height: 100px;
+  margin: 0 auto;
+  margin-top: 3%;
+  text-align: center;
+
+  .noresults {
+    text-align: center;
+    margin: 0 0 10px 0;
+    font-size: 2rem;
+    color: #FFFFFF;
+    text-shadow: black 2px 2px 2px;
+    margin-top: -1%;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .clickforresults {
+    text-align: center;
+    margin: 0 0 10px 0;
+    font-size: 2rem;
+    color: #FFFFFF;
+    text-shadow: black 2px 2px 2px;
+    margin-top: -1%;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .clickforresults:hover {
+    font-size: 2.2rem;
+    transition: 0.2s;
+  }
 }
 
 .locationsform {
+  // width: 40%;
+  // margin: 0 auto 5%;
   margin: 0 0 5% 10%;
-  height: 100px;
-  margin-bottom: 0;
+  margin-bottom: 100px;
+
 }
+
+@media screen and (min-width: 610px) {
+  .locationsform {
+    margin: 0 0 5% 11%;
+  }
+}
+
+@media screen and (min-width: 630px) {
+  .locationsform {
+    margin: 0 0 5% 13%;
+  }
+}
+
+@media screen and (min-width: 652px) {
+  .locationsform {
+    margin: 0 0 5% 10%;
+  }
+}
+
+
+@media screen and (min-width: 810px) {
+  .locationsform {
+    margin: 0 0 5% 11%;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .locationsform {
+    margin: 0 0 5% 12%;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .locationsform {
+    margin: 0 0 5% 13%;
+  }
+}
+
+@media screen and (min-width: 870px) {
+  .locationsform {
+    margin: 0 0 5% 14%;
+  }
+}
+
+@media screen and (min-width: 890px) {
+  .locationsform {
+    margin: 0 0 5% 15%;
+  }
+}
+
+@media screen and (min-width: 910px) {
+  .locationsform {
+    margin: 0 0 5% 16%;
+  }
+}
+
+@media screen and (min-width: 930px) {
+  .locationsform {
+    margin: 0 0 5% 17%;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .locationsform {
+    margin: 0 0 5% 18%;
+  }
+}
+
+@media screen and (min-width: 970px) {
+  .locationsform {
+    margin: 0 0 5% 19%;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .locationsform {
+    margin: 0 0 5% 20%;
+  }
+}
+
+@media screen and (min-width: 1010px) {
+  .locationsform {
+    margin: 0 0 5% 21%;
+  }
+}
+
+@media screen and (min-width: 1030px) {
+  .locationsform {
+    margin: 0 0 5% 22%;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .locationsform {
+    margin: 0 0 5% 23%;
+  }
+}
+
+@media screen and (min-width: 1090px) {
+  .locationsform {
+    margin: 0 0 5% 25%;
+  }
+}
+
+@media screen and (min-width: 1308px) {
+  .locationsform {
+    margin: 0 0 5% 10%;
+  }
+}
+
+
+
 
 
 .locationsbutton {
@@ -171,23 +360,26 @@ img {
 
 
 
-.main {
+#homesection {
   width: 100%;
   height: 1080px;
   margin-bottom: 0;
   margin: 0;
-  background-image: url("http://cdn-media-2.lifehack.org/wp-content/files/2015/02/Food.jpg");
+  background-image: url("../assets/images/Food.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
 
 .searchbox {
   width: 50%;
+  // max-width: 760px;
   height: 40px;
   padding-left: 1%;
   font-size: 20px;
   margin-bottom: 2%;
+  transition: all 0.2s ease-in-out;
 }
+
 
 .container {
   width: 100%;
@@ -204,6 +396,7 @@ img {
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
   background-color: rgba(0, 0, 0, 0.2);
+  // margin-top: 30px;
 }
 
 @media screen and (min-width: 484px) {
@@ -263,7 +456,7 @@ img {
   transition-duration: 0.5s;
 }
 
-.bottominstructions {
+#bottominstructions {
   width: 100%;
   height: 300px;
   margin: 0 auto;
@@ -275,15 +468,15 @@ img {
   padding-top: 40px;
   text-shadow: black 3px 3px 3px;
   // background-color: black;
-  background-image: url("http://sanmanuel.com/sites/default/files/featured-images/14574_SWGrill_1440x500_1.jpg");
+  background-image: url("../assets/images/plate.jpg");
   background-position: 80% 65%;
   font-weight: bolder;
   font-stretch: ultra-expanded;
   text-decoration-style: double;
 }
 
-.searchresults {
-  background-image: url("http://pic.1fotonin.com/data/wallpapers/23/WDF_708201.jpg");
+#searchresults {
+  background-image: url("../assets/images/WDF_708201.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   overflow-y: scroll;
@@ -291,31 +484,31 @@ img {
 }
 
 @media screen and (min-width: 555px) {
-  .bottominstructions {
+  #bottominstructions {
     height: 200px;
   }
 }
 
 @media screen and (min-width: 669px) {
-  .bottominstructions {
+  #bottominstructions {
     height: 300px;
   }
 }
 
 @media screen and (min-width: 675px) {
-  .bottominstructions {
+  #bottominstructions {
     height: 250px;
   }
 }
 
 @media screen and (min-width: 669px) {
-  .bottominstructions {
+  #bottominstructions {
     font-size: 90px;
   }
 }
 
 @media screen and (min-width: 828px) {
-  .bottominstructions {
+  #bottominstructions {
     height: 400px;
     font-size: 90px;
     font-size: 7rem;
@@ -323,8 +516,16 @@ img {
 }
 
 @media screen and (min-width: 840px) {
-  .bottominstructions {
-    height: 340px;
+  #bottominstructions {
+    height: 430px;
+    font-size: 8rem;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  #bottominstructions {
+    height: 300px;
     font-size: 8rem;
     margin-bottom: 0;
   }

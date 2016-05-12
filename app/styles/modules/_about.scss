@@ -1,3 +1,14 @@
+.about-blackbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 60px;
+  background-color: black;
+  z-index: 99;
+  transition: all 0.2s ease-in-out;
+}
+
 .leftbox {
   float: left;
   width: calc(100% - 20px);
@@ -5,14 +16,60 @@
   background-color: gray;
   padding: 10px;
   transition: all 0.2s ease-in-out;
+  background-image: url("http://wallpoper.com/images/00/44/99/40/wood-log_00449940.jpg");
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 795px) {
   .leftbox {
     width: calc(50% - 20px);
     height: 800px
   }
 }
+
+.rightbox {
+  float: right;
+  width: calc(100% - 20px);
+  height: 400px;
+  background-color: crimson;
+  padding: 10px;
+  transition: all 0.2s ease-in-out;
+  background-image: url("../assets/images/Restaurant-Rater-2.png");
+  background-size: contain;
+  background-size: cover;
+  background-position: 23% 0%;
+}
+
+@media screen and (min-width: 795px) {
+  .rightbox {
+    width: calc(50% - 20px);
+    height: 800px;
+    background-size: cover;
+    background-position: 90% 0%;
+    background-image: url("../assets/images/Restaurant-Rater-3.png");
+  }
+}
+
+@media screen and (min-width: 845px) {
+  .rightbox {
+    width: calc(50% - 20px);
+    height: 800px;
+    background-size: cover;
+    background-position: 40% 10%;
+    background-image: url("../assets/images/Restaurant-Rater-4.png");
+  }
+}
+
+@media screen and (min-width: 1310px) {
+  .rightbox {
+    width: calc(50% - 20px);
+    height: 800px;
+    background-size: cover;
+    background-position: 55% 10%;
+    background-image: url("../assets/images/Restaurant-Rater-5.png");
+  }
+}
+
+
 
 .abouthead {
   color: white;
@@ -20,7 +77,8 @@
   font-size: 2rem;
   text-shadow: black 2px 2px 2px;
   text-align: center;
-  transition: all 0.2s ease-in-out;
+  margin-bottom: -10px;
+  // transition: all 0.2s ease-in-out;
 }
 
 @media screen and (min-width: 500px) {
@@ -179,11 +237,17 @@
   }
 }
 
-
-
-
-
-
-
 .restaurantdis {
+  color: white;
+  font-size: 1.2rem;
+  text-shadow: black 1px 1px 1px;
+  padding: 10px;
+  width: calc(100% - 14px);
+  margin-left: 14px;
+}
+
+@media screen and (min-width: 550px) {
+  .restaurantdis {
+    font-size: 1.5rem;
+  }
 }

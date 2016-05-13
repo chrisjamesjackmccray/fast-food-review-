@@ -1,10 +1,10 @@
 .loginbox {
+  width: 400px;
+  height: 200px;
   margin: 0 auto;
-  width: 380px;
-  height: 100px;
+  padding-top: 10px;
 
   .logintitle {
-    margin-top: 0;
     height: 80px;
     text-align: center;
     color: #8c8c8c;
@@ -19,22 +19,22 @@
 
   .loginemail {
     margin-top: 3%;
-    width: 40%;
+    width: 35%;
     margin-left: 5%;
   }
 
   .loginpassword {
     margin-top: 3%;
-    width: 40%;
+    width: 35%;
     height: 20%;
   }
 
   .loginbutton {
-    margin-top: 3%;
+    margin-top: 0%;
     float: right;
     cursor: pointer;
     background-color: none;
-    width: 10%;
+    width: 20%;
     color: black;
   }
 }

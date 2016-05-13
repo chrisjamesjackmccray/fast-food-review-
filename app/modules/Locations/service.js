@@ -162,7 +162,7 @@ class LocationsService {
               avg = "Rare"
             }
             else {
-              avg = "Not at all"
+              avg = "Always"
             }
           }
           else {

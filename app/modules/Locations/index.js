@@ -12,7 +12,7 @@ locations.config(config);
 locations.controller('LocationsController', listController);
 locations.controller('RateController', rateController);
 locations.service('LocationsService', service);
-locations.controller('A boutController', aboutController);
+locations.controller('AboutController', aboutController);
 
 
 export default locations;

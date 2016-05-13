@@ -473,14 +473,13 @@ img {
 
 @media screen and (min-width: 828px) {
   #bottominstructions {
-    height: 400px;
-    font-size: 90px;
-    font-size: 7rem; } }
+    height: 250px;
+    font-size: 90px; } }
 
 @media screen and (min-width: 840px) {
   #bottominstructions {
-    height: 430px;
-    font-size: 8rem;
+    height: 250px;
+    font-size: 90px;
     margin-bottom: 0; } }
 
 @media screen and (min-width: 960px) {

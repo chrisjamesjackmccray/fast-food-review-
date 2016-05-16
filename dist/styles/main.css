@@ -51,61 +51,231 @@ body {
       .nav .ul li a {
         color: #F58D89; }
 
+@media screen and (max-width: 450px) {
+  .ul {
+    padding-left: 10px; } }
+
 .li:hover {
   color: white;
   transition: 0.5s; }
 
-.loginbox {
-  width: 400px;
-  height: 200px;
+.apptitle {
+  font-size: 5rem;
+  margin: 0;
+  color: white;
+  text-shadow: black 3px 3px 3px;
   margin: 0 auto;
-  padding-top: 10px; }
-  .loginbox .logintitle {
-    height: 80px;
-    text-align: center;
-    color: #8c8c8c;
-    font-size: 50px;
-    margin-bottom: 2%;
-    padding-left: 4%;
-    padding-right: 4%;
-    text-shadow: black 3px 3px 3px; }
-  .loginbox .loginemail {
-    margin-top: 3%;
-    width: 35%;
-    margin-left: 5%; }
-  .loginbox .loginpassword {
-    margin-top: 3%;
-    width: 35%;
-    height: 20%; }
-  .loginbox .loginbutton {
-    margin-top: 0%;
-    float: right;
-    cursor: pointer;
-    background-color: none;
-    width: 20%;
-    color: black; }
+  text-align: center; }
+
+@media screen and (min-width: 598px) {
+  .apptitle {
+    font-size: 7rem; } }
+
+@media screen and (min-width: 1050px) {
+  .apptitle {
+    font-size: 8rem; } }
+
+@media screen and (min-width: 1150px) {
+  .apptitle {
+    font-size: 8.5rem; } }
+
+@media screen and (min-width: 1320px) {
+  .apptitle {
+    font-size: 10rem; } }
+
+.background {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../assets/images/iio.jpg"); }
+
+.loginemail {
+  height: 20px;
+  width: 140px;
+  margin-bottom: 10%; }
+
+@media screen and (min-width: 598px) {
+  .logineremail {
+    margin-top: 10%; } }
+
+.loginpassword {
+  height: 20px;
+  width: 140px;
+  margin-bottom: 10%; }
+
+.loginbutton {
+  margin-top: 0%;
+  float: right;
+  cursor: pointer;
+  background-color: none;
+  width: 20%;
+  color: black; }
+
+.logintitle {
+  height: 80px;
+  text-align: center;
+  color: #727272;
+  font-size: 50px;
+  margin-bottom: 4%;
+  padding-left: 4%;
+  padding-right: 4%;
+  margin-top: 0;
+  text-shadow: black 3px 3px 3px; }
+
+@media screen and (min-width: 598px) {
+  .logintitle {
+    font-size: 80px;
+    margin-bottom: 10%; } }
+
+@media screen and (min-width: 598px) {
+  .logintitle {
+    font-size: 100px;
+    margin-bottom: 5%; } }
+
+.center {
+  width: 35%;
+  margin-left: 100px;
+  height: 100vh;
+  margin: 0 auto; }
+
+@media screen and (min-width: 500px) {
+  .center {
+    width: 30%; } }
+
+@media screen and (min-width: 575px) {
+  .center {
+    width: 25%; } }
+
+@media screen and (min-width: 680px) {
+  .center {
+    width: 20%; } }
+
+@media screen and (min-width: 845px) {
+  .center {
+    width: 15%; } }
+
+@media screen and (min-width: 1130px) {
+  .center {
+    width: 15%; } }
+
+@media screen and (min-width: 1170px) {
+  .center {
+    width: 12%; } }
+
+@media screen and (min-width: 1400px) {
+  .center {
+    width: 10%; } }
+
+.apptitle {
+  font-size: 5rem;
+  margin: 0;
+  color: white;
+  text-shadow: black 3px 3px 3px;
+  margin: 0 auto;
+  text-align: center; }
+
+@media screen and (min-width: 598px) {
+  .apptitle {
+    font-size: 7rem; } }
+
+@media screen and (min-width: 1050px) {
+  .apptitle {
+    font-size: 8rem; } }
+
+@media screen and (min-width: 1150px) {
+  .apptitle {
+    font-size: 8.5rem; } }
+
+@media screen and (min-width: 1320px) {
+  .apptitle {
+    font-size: 10rem; } }
+
+.background {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../assets/images/iio.jpg"); }
+
+.registeremail {
+  height: 20px;
+  width: 140px;
+  margin-bottom: 10%; }
+
+@media screen and (min-width: 598px) {
+  .registeremail {
+    margin-top: 10%; } }
+
+.registerpassword {
+  height: 20px;
+  width: 140px;
+  margin-bottom: 10%; }
+
+.center {
+  width: 35%;
+  margin-left: 100px;
+  height: 100vh;
+  margin: 0 auto; }
+
+@media screen and (min-width: 500px) {
+  .center {
+    width: 30%; } }
+
+@media screen and (min-width: 575px) {
+  .center {
+    width: 25%; } }
+
+@media screen and (min-width: 680px) {
+  .center {
+    width: 20%; } }
+
+@media screen and (min-width: 845px) {
+  .center {
+    width: 15%; } }
+
+@media screen and (min-width: 1130px) {
+  .center {
+    width: 15%; } }
+
+@media screen and (min-width: 1170px) {
+  .center {
+    width: 12%; } }
+
+@media screen and (min-width: 1400px) {
+  .center {
+    width: 10%; } }
 
 .registerdiv {
-  width: 400px;
-  height: 200px;
+  width: 600px;
+  height: 400px;
   margin: 0 auto;
-  padding-top: 50px; }
+  margin-bottom: 200px; }
   .registerdiv .registerinside {
-    width: 350px;
-    height: 100px;
-    margin: 10px 0 0 30px; }
+    height: 100px; }
+    .registerdiv .registerinside .registerform {
+      width: 30%;
+      margin-top: 40px;
+      margin: 0 auto; }
     .registerdiv .registerinside .registerbutton {
       cursor: pointer; }
 
 h3 {
   height: 80px;
   text-align: center;
-  color: #8c8c8c;
+  color: #727272;
   font-size: 50px;
-  margin-bottom: 2%;
+  margin-bottom: 4%;
   padding-left: 4%;
   padding-right: 4%;
+  margin-top: 0;
   text-shadow: black 3px 3px 3px; }
+
+@media screen and (min-width: 598px) {
+  h3 {
+    font-size: 80px;
+    margin-bottom: 10%; } }
+
+@media screen and (min-width: 598px) {
+  h3 {
+    font-size: 100px;
+    margin-bottom: 5%; } }
 
 input[type="submit"], input[type="button"] {
   height: 40px;
@@ -139,6 +309,9 @@ input[type="submit"]:hover, input[type="button"]:hover {
     text-shadow: black 3px 3px 3px; }
     .headbox h4 .breakh4 {
       display: block; }
+  @media screen and (max-width: 450px) {
+    .headbox h4 {
+      font-size: 4.6rem; } }
   @media screen and (min-width: 549px) {
     .headbox h4 {
       font-size: 5rem; } }
@@ -272,51 +445,67 @@ img {
 
 @media screen and (min-width: 870px) {
   .locationsform {
-    margin: 0 0 5% 14%; } }
+    margin: 0 0 5% 13%; } }
 
 @media screen and (min-width: 890px) {
   .locationsform {
-    margin: 0 0 5% 15%; } }
+    margin: 0 0 5% 14%; } }
 
 @media screen and (min-width: 910px) {
   .locationsform {
-    margin: 0 0 5% 16%; } }
+    margin: 0 0 5% 14.5%; } }
 
 @media screen and (min-width: 930px) {
   .locationsform {
-    margin: 0 0 5% 17%; } }
+    margin: 0 0 5% 16%; } }
 
 @media screen and (min-width: 950px) {
   .locationsform {
-    margin: 0 0 5% 18%; } }
+    margin: 0 0 5% 16%; } }
 
 @media screen and (min-width: 970px) {
   .locationsform {
-    margin: 0 0 5% 19%; } }
+    margin: 0 0 5% 17%; } }
 
 @media screen and (min-width: 990px) {
   .locationsform {
-    margin: 0 0 5% 20%; } }
+    margin: 0 0 5% 18%; } }
 
 @media screen and (min-width: 1010px) {
   .locationsform {
-    margin: 0 0 5% 21%; } }
+    margin: 0 0 5% 18%; } }
 
 @media screen and (min-width: 1030px) {
   .locationsform {
-    margin: 0 0 5% 22%; } }
+    margin: 0 0 5% 19%; } }
 
 @media screen and (min-width: 1050px) {
   .locationsform {
-    margin: 0 0 5% 23%; } }
+    margin: 0 0 5% 19.5%; } }
 
 @media screen and (min-width: 1090px) {
+  .locationsform {
+    margin: 0 0 5% 21%; } }
+
+@media screen and (min-width: 1140px) {
+  .locationsform {
+    margin: 0 0 5% 22%; } }
+
+@media screen and (min-width: 1170px) {
+  .locationsform {
+    margin: 0 0 5% 23%; } }
+
+@media screen and (min-width: 1220px) {
+  .locationsform {
+    margin: 0 0 5% 24%; } }
+
+@media screen and (min-width: 1270px) {
   .locationsform {
     margin: 0 0 5% 25%; } }
 
 @media screen and (min-width: 1308px) {
   .locationsform {
-    margin: 0 0 5% 10%; } }
+    margin: 0 0 5% 10.3%; } }
 
 .locationsbutton {
   cursor: pointer;
@@ -497,7 +686,6 @@ a:hover {
 
 .ratingbox {
   width: 100%;
-  height: 800px;
   margin: 0 auto;
   background-image: url("../assets/images/wine.jpeg");
   background-size: cover;
@@ -553,7 +741,6 @@ a:hover {
   color: #eae8e8;
   border-top: 1px solid #FFFFFF;
   padding-top: 5%;
-  overflow-y: scroll;
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
   background-color: rgba(0, 0, 0, 0.5); }
@@ -568,7 +755,6 @@ a:hover {
   font-size: 2.7rem;
   border-top: 1px solid #FFFFFF;
   padding-top: 70px;
-  overflow-y: scroll;
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
   background-color: rgba(0, 0, 0, 0.5);
@@ -602,9 +788,6 @@ select {
   background-color: white;
   transition: 0.3s; }
 
-section[option] {
-  background-color: white; }
-
 .averagesubmit {
   cursor: pointer;
   color: black; }
@@ -615,8 +798,8 @@ section[option] {
   right: 0;
   width: 50%;
   height: 60px;
-  background-color: black;
-  z-index: 99;
+  background-color: #C36146;
+  z-index: 98;
   transition: all 0.2s ease-in-out; }
 
 .leftbox {
@@ -631,7 +814,7 @@ section[option] {
 @media screen and (min-width: 795px) {
   .leftbox {
     width: calc(50% - 20px);
-    height: 800px; } }
+    height: 810px; } }
 
 .rightbox {
   float: right;
@@ -648,7 +831,7 @@ section[option] {
 @media screen and (min-width: 795px) {
   .rightbox {
     width: calc(50% - 20px);
-    height: 800px;
+    height: 810px;
     background-size: cover;
     background-position: 90% 0%;
     background-image: url("../assets/images/Restaurant-Rater-3.png"); } }
@@ -656,7 +839,7 @@ section[option] {
 @media screen and (min-width: 845px) {
   .rightbox {
     width: calc(50% - 20px);
-    height: 800px;
+    height: 810px;
     background-size: cover;
     background-position: 40% 10%;
     background-image: url("../assets/images/Restaurant-Rater-4.png"); } }
@@ -664,7 +847,7 @@ section[option] {
 @media screen and (min-width: 1310px) {
   .rightbox {
     width: calc(50% - 20px);
-    height: 800px;
+    height: 810px;
     background-size: cover;
     background-position: 55% 10%;
     background-image: url("../assets/images/Restaurant-Rater-5.png"); } }

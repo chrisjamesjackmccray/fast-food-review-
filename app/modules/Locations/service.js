@@ -59,10 +59,10 @@ class LocationsService {
             if (avg === 2) {
               avg = "2"
             }
-            else if (avg > 5) {
+            else if (avg >= 5) {
               avg = "5"
             }
-            else if (avg > 10) {
+            else if (avg >= 10) {
               avg = "10"
             }
             else {
@@ -109,10 +109,10 @@ class LocationsService {
             if (avg === 4) {
               avg = "Very Good"
             }
-            else if (avg > 3) {
+            else if (avg >= 3) {
               avg = "Good"
             }
-            else if (avg > 2) {
+            else if (avg >= 2) {
               avg = "Bad"
             }
             else {
@@ -153,16 +153,16 @@ class LocationsService {
             avg = (totalStale / response.length);
 
             if (avg === 4) {
-              avg = "Not at all"
+              avg = "Poor"
             }
-            else if (avg > 3) {
-              avg = "Sometimes"
+            else if (avg >= 3) {
+              avg = "Average"
             }
-            else if (avg > 2) {
-              avg = "Rare"
+            else if (avg >= 2) {
+              avg = "Good"
             }
             else {
-              avg = "Always"
+              avg = "Excellent"
             }
           }
           else {

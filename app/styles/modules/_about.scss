@@ -4,8 +4,9 @@
   right: 0;
   width: 50%;
   height: 60px;
-  background-color: black;
-  z-index: 99;
+  background-color: #C36146;
+  // background-color: rgba(0, 0, 0, 0.9);
+  z-index: 98;
   transition: all 0.2s ease-in-out;
 }
 
@@ -22,7 +23,7 @@
 @media screen and (min-width: 795px) {
   .leftbox {
     width: calc(50% - 20px);
-    height: 800px
+    height: 810px
   }
 }
 
@@ -42,7 +43,7 @@
 @media screen and (min-width: 795px) {
   .rightbox {
     width: calc(50% - 20px);
-    height: 800px;
+    height: 810px;
     background-size: cover;
     background-position: 90% 0%;
     background-image: url("../assets/images/Restaurant-Rater-3.png");
@@ -52,7 +53,7 @@
 @media screen and (min-width: 845px) {
   .rightbox {
     width: calc(50% - 20px);
-    height: 800px;
+    height: 810px;
     background-size: cover;
     background-position: 40% 10%;
     background-image: url("../assets/images/Restaurant-Rater-4.png");
@@ -62,7 +63,7 @@
 @media screen and (min-width: 1310px) {
   .rightbox {
     width: calc(50% - 20px);
-    height: 800px;
+    height: 810px;
     background-size: cover;
     background-position: 55% 10%;
     background-image: url("../assets/images/Restaurant-Rater-5.png");

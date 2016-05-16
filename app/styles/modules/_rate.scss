@@ -1,18 +1,16 @@
 
 .ratingbox {
   width: 100%;
-  height: 800px;
   margin: 0 auto;
   background-image: url("../assets/images/wine.jpeg");
   background-size: cover;
   background-attachment: fixed;
-
 }
 
-  .clearfix {
-    overflow: auto;
-    zoom: 1;
-  }
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
 
 
 .question {
@@ -70,7 +68,7 @@
   color: #eae8e8;
   border-top: 1px solid #FFFFFF;
   padding-top: 5%;
-  overflow-y: scroll;
+  // overflow-y: scroll;
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
   background-color: rgba(0, 0, 0, 0.5);
@@ -86,7 +84,7 @@
   font-size: 2.7rem;
   border-top: 1px solid #FFFFFF;
   padding-top: 70px;
-  overflow-y: scroll;
+  // overflow-y: scroll;
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
   background-color: rgba(0, 0, 0, 0.5);
@@ -125,10 +123,6 @@ select {
 .questiondivtop:hover select {
   background-color: white;
   transition: 0.3s;
-}
-
-section[option] {
-  background-color: white;
 }
 
 

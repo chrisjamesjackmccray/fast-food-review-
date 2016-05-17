@@ -410,8 +410,8 @@ img {
 
 
 .container {
-  width: 100%;
-  height: 350px;
+  width: 80%;
+  height: 380px;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 2%;
@@ -445,21 +445,36 @@ img {
     }
   }
 
-  @media screen and (min-width: 1285px) {
+  @media screen and (min-width: 1029px) {
     .container {
-      height: 230px;
+      height: 250px;
     }
   }
- @media screen and (min-width: 1285px) {
-    .container:hover {
-      height: 240px;
+
+  @media screen and (min-width: 1029px) {
+     .container:hover {
+       height: 260px;
+     }
+  }
+
+  @media screen and (min-width: 1350px) {
+    .container {
+      height: 180px;
     }
   }
+
+  @media screen and (min-width: 1350px) {
+     .container:hover {
+       height: 190px;
+     }
+  }
+
+
 }
 
 .container:hover {
   opacity: 1;
-  width: 95%;
+  width: 75%;
   background-color: #eae8e8;
   border: 1px solid #eae8e8;
   color: #eae8e8;
@@ -478,7 +493,32 @@ img {
   line-height: 40px;
   letter-spacing: 2px;
   font-size: 1rem;
-  font-size: 20px;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 621px) {
+  .containertwo {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 630px) {
+  .containertwo {
+    font-size: 20px;
+  }
+}
+
+
+@media screen and (min-width: 1350px) {
+  .containertwo {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1390px) {
+  .containertwo {
+    font-size: 15px;
+  }
 }
 
 .containertwo:hover {
@@ -488,14 +528,13 @@ img {
 
 #bottominstructions {
   width: 100%;
-  height: 300px;
   margin: 0 auto;
   text-align: center;
   // border-left: 5px solid #eae8e8;
   // border-right: 5px solid #eae8e8;
   color: white;
   font-size: 74px;
-  padding-top: 40px;
+  padding-top: 10px;
   text-shadow: black 3px 3px 3px;
   // background-color: black;
   background-image: url("../assets/images/plate.jpg");
@@ -515,48 +554,108 @@ img {
 
 @media screen and (min-width: 555px) {
   #bottominstructions {
-    height: 200px;
+    height: 180px;
+    padding-top: 10px;
+  }
+}
+
+@media screen and (min-width: 603px) {
+  #bottominstructions {
+    padding-top: 20px;
+    height: 170px;
+  }
+}
+
+@media screen and (min-width: 641px) {
+  #bottominstructions {
+    padding-top: 20px;
+    height: 170px;
+  }
+}
+
+@media screen and (min-width: 643px) {
+  #bottominstructions {
+    padding-top: 20px;
+    padding-top: 40px;
+    height: 130px;
   }
 }
 
 @media screen and (min-width: 669px) {
   #bottominstructions {
-    height: 300px;
+    padding-top: 10px;
+    height: 210px;
+    font-size: 91px;
   }
 }
+
+@media screen and (min-width: 681px) {
+  #bottominstructions {
+    padding-top: 10px;
+    height: 210px;
+    font-size: 91px;
+  }
+}
+
 
 @media screen and (min-width: 675px) {
   #bottominstructions {
-    height: 250px;
+    height: 210px;
   }
 }
 
-@media screen and (min-width: 669px) {
+@media screen and (min-width: 782px) {
   #bottominstructions {
-    font-size: 90px;
+    padding-top: 40px;
+    height: 150px;
   }
 }
+
+@media screen and (min-width: 789px) {
+  #bottominstructions {
+    padding-top: 40px;
+    height: 150px;
+  }
+}
+
 
 @media screen and (min-width: 828px) {
   #bottominstructions {
-    height: 250px;
+    padding-top: 40px;
+    height: 140px;
     font-size: 90px;
   }
 }
 
 @media screen and (min-width: 840px) {
   #bottominstructions {
-    height: 250px;
+    padding-top: 40px;
+    height: 140px;
     font-size: 90px;
-    margin-bottom: 0;
   }
 }
 
 @media screen and (min-width: 960px) {
   #bottominstructions {
-    height: 300px;
-    font-size: 8rem;
-    margin-bottom: 0;
+    padding-top: 50px;
+    height: 170px;
+    font-size: 110px;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  #bottominstructions {
+    padding-top: 60px;
+    height: 210px;
+    font-size: 130px;
+  }
+}
+
+@media screen and (min-width: 1310px) {
+  #bottominstructions {
+    padding-top: 60px;
+    height: 230px;
+    font-size: 150px;
   }
 }
 
@@ -567,4 +666,25 @@ a {
 
 a:hover {
   color: #2d2d2d;
+}
+
+.space {
+  display: block;
+}
+
+@media screen and (min-width: 1350px) {
+  .space {
+    display: inline;
+    margin: 0 20px;
+  }
+}
+
+.pizzabreak {
+  display: block;
+}
+
+@media screen and (min-width: 1029px) {
+  .pizzabreak {
+    display: none;
+  }
 }

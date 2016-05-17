@@ -2,6 +2,7 @@
 .ratingbox {
   width: 100%;
   margin: 0 auto;
+  height: 100vh;
   background-image: url("../assets/images/wine.jpeg");
   background-size: cover;
   background-attachment: fixed;
@@ -58,16 +59,37 @@
   cursor: default;
 }
 
-.questiondiv {
-  width: 100%;
-  height: 300px;
+.questiondivsub {
+  width: 120px;
+  height: 70px;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 2%;
   font-size: 2.7rem;
   color: #eae8e8;
   border-top: 1px solid #FFFFFF;
-  padding-top: 5%;
+  padding-top: 1.66;
+  // overflow-y: scroll;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.questiondivsub:hover {
+  width: 100px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.questiondiv {
+  width: 80%;
+  height: 200px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 2%;
+  font-size: 2.7rem;
+  color: #eae8e8;
+  border-top: 1px solid #FFFFFF;
+  padding-top: 1.66;
   // overflow-y: scroll;
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
@@ -75,15 +97,14 @@
 }
 
 .questiondivtop {
-  width: 100%;
-  height: 300px;
+  width: 80%;
+  height: 200px;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 2%;
   color: #eae8e8;
   font-size: 2.7rem;
   border-top: 1px solid #FFFFFF;
-  padding-top: 70px;
   // overflow-y: scroll;
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
@@ -92,15 +113,15 @@
 }
 
 .questiondivtop:hover {
-  width: 95%;
-  height: 290px;
+  width: 75%;
+  height: 190px;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
 .questiondiv:hover {
-  width: 95%;
+  width: 75%;
   background-color: rgba(0, 0, 0, 0.4);
-  height: 295px;
+  height: 195px;
 }
 
 
@@ -129,4 +150,5 @@ select {
 .averagesubmit {
   cursor: pointer;
   color: black;
+  margin: 0 auto;
 }

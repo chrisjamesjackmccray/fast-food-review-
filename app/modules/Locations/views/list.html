@@ -23,7 +23,7 @@
        <input class="searchbox" type="text" placeholder="Restaurant" ng-model="locationsCtrl.place">
        <br class="thebreak">
 
-       <input class="locationsbutton" type="submit" value="Submit">
+       <input class="locationsbutton" type="submit" value="Search">
        <input class="logout" type="button" value="Logout" ng-click="locationsCtrl.logout()">
     </form>
   </div>
@@ -46,14 +46,14 @@
 
   <div class="undermaptext">
     <div class="noresults" ng-if="locationsCtrl.places.length === 0">No Results Yet <br> Search For A Restaurant </div>
-    <a class="clickforresults" href="#bottominstructions" du-smooth-scroll duration="1000" ng-if="locationsCtrl.places.length > 0"> Click Here To View Restaurants </a>
+    <a class="clickforresults" href="#bottominstructions" du-smooth-scroll duration="1000" ng-if="locationsCtrl.places.length > 0"> Click Here To View Results </a>
   </div>
 
 </div>
 
 
 
-  <h2 id="bottominstructions" ng-if="locationsCtrl.places.length > 0"> Click on a box to rate a Restaurant </h2>
+  <h2 id="bottominstructions" ng-if="locationsCtrl.places.length > 0"> Restaurant Results </h2>
   <div id="searchresults">
 
     <a ui-sref="rate({ id: place.id, search: locationsCtrl.place })" ng-repeat="place in locationsCtrl.places">
@@ -62,9 +62,11 @@
         {{ place.vicinity }}<br>
 
         <div class="containertwo">
-          Wait Time: {{ place.avgWaitTime }}<br>
-          Customer Service: {{ place.avgCustomerService }}<br>
-          Food Quality: {{ place.avgStale }}
+          Average Wait Time: {{ place.avgWaitTime }}
+          <span class="space"></span>
+          Average Customer Service: {{ place.avgCustomerService }}
+          <span class="space"></span>
+          Average Food Quality: {{ place.avgStale }}
         </div>
 
       </div>

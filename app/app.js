@@ -27,4 +27,5 @@ function config($urlRouterProvider) {
 App.value('duScrollOffset', 60);
 
 
+
 App.config(config);

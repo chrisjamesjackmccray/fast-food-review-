@@ -674,13 +674,13 @@ img {
 
 @media screen and (min-width: 603px) {
   #bottominstructions {
-    padding-top: 20px;
-    height: 170px; } }
+    padding-top: 40px;
+    height: 140px; } }
 
 @media screen and (min-width: 641px) {
   #bottominstructions {
-    padding-top: 20px;
-    height: 170px; } }
+    padding-top: 40px;
+    height: 140px; } }
 
 @media screen and (min-width: 643px) {
   #bottominstructions {
@@ -704,27 +704,10 @@ img {
   #bottominstructions {
     height: 210px; } }
 
-@media screen and (min-width: 782px) {
+@media screen and (min-width: 741px) {
   #bottominstructions {
     padding-top: 40px;
-    height: 150px; } }
-
-@media screen and (min-width: 789px) {
-  #bottominstructions {
-    padding-top: 40px;
-    height: 150px; } }
-
-@media screen and (min-width: 828px) {
-  #bottominstructions {
-    padding-top: 40px;
-    height: 140px;
-    font-size: 90px; } }
-
-@media screen and (min-width: 840px) {
-  #bottominstructions {
-    padding-top: 40px;
-    height: 140px;
-    font-size: 90px; } }
+    height: 160px; } }
 
 @media screen and (min-width: 960px) {
   #bottominstructions {

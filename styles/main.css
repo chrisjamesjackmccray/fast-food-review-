@@ -293,9 +293,13 @@ input[type="submit"]:hover, input[type="button"]:hover {
   color: white;
   transition: 0.2s; }
 
+.viewresultsbutton {
+  width: 200px;
+  cursor: pointer; }
+
 .headbox {
   width: 90%;
-  height: 320px;
+  height: 250px;
   margin: 0 auto;
   margin-bottom: 20px;
   border-radius: 5px; }
@@ -321,36 +325,33 @@ input[type="submit"]:hover, input[type="button"]:hover {
   @media screen and (min-width: 683px) {
     .headbox h4 .breakh4 {
       display: none; } }
+  @media screen and (min-width: 1308px) {
+    .headbox h4 {
+      font-size: 8.5rem; } }
 
 @media screen and (min-width: 471px) {
   .headbox {
-    height: 320px; } }
+    height: 250px; } }
 
 @media screen and (min-width: 471px) and (min-width: 652px) {
   .headbox {
     height: 220px; } }
 
+@media screen and (min-width: 471px) and (min-width: 665px) {
+  .headbox {
+    height: 120px; } }
+
 @media screen and (min-width: 471px) and (min-width: 683px) {
   .headbox {
-    height: 300px; } }
+    height: 290px; } }
 
-@media screen and (min-width: 471px) and (min-width: 712px) {
+@media screen and (min-width: 471px) and (min-width: 930px) {
   .headbox {
-    height: 220px;
-    height: 300px;
-    color: black; } }
-
-@media screen and (min-width: 471px) and (min-width: 935px) {
-  .headbox {
-    height: 300px; } }
+    height: 160px; } }
 
 @media screen and (min-width: 471px) and (min-width: 1308px) {
   .headbox {
-    height: 150px; } }
-
-@media screen and (min-width: 471px) and (min-width: 1361px) {
-  .headbox {
-    height: 150px; } }
+    height: 180px; } }
 
 img {
   width: 45px;
@@ -458,54 +459,6 @@ img {
 @media screen and (min-width: 930px) {
   .locationsform {
     margin: 0 0 5% 16%; } }
-
-@media screen and (min-width: 950px) {
-  .locationsform {
-    margin: 0 0 5% 16%; } }
-
-@media screen and (min-width: 970px) {
-  .locationsform {
-    margin: 0 0 5% 17%; } }
-
-@media screen and (min-width: 990px) {
-  .locationsform {
-    margin: 0 0 5% 18%; } }
-
-@media screen and (min-width: 1010px) {
-  .locationsform {
-    margin: 0 0 5% 18%; } }
-
-@media screen and (min-width: 1030px) {
-  .locationsform {
-    margin: 0 0 5% 19%; } }
-
-@media screen and (min-width: 1050px) {
-  .locationsform {
-    margin: 0 0 5% 19.5%; } }
-
-@media screen and (min-width: 1090px) {
-  .locationsform {
-    margin: 0 0 5% 21%; } }
-
-@media screen and (min-width: 1140px) {
-  .locationsform {
-    margin: 0 0 5% 22%; } }
-
-@media screen and (min-width: 1170px) {
-  .locationsform {
-    margin: 0 0 5% 23%; } }
-
-@media screen and (min-width: 1220px) {
-  .locationsform {
-    margin: 0 0 5% 24%; } }
-
-@media screen and (min-width: 1270px) {
-  .locationsform {
-    margin: 0 0 5% 25%; } }
-
-@media screen and (min-width: 1308px) {
-  .locationsform {
-    margin: 0 0 5% 10.3%; } }
 
 .locationsbutton {
   cursor: pointer;

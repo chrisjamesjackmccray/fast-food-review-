@@ -293,9 +293,16 @@ input[type="submit"]:hover, input[type="button"]:hover {
   color: white;
   transition: 0.2s; }
 
-.viewresultsbutton {
-  width: 200px;
+input[type="button"].viewresultsbutton {
+  width: 130px;
   cursor: pointer; }
+
+input[type="button"].viewresultsbutton:hover {
+  background-color: #F58D89;
+  width: 140px;
+  font-size: 19px;
+  color: white;
+  transition: 0.2s; }
 
 .headbox {
   width: 90%;

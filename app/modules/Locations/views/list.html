@@ -16,7 +16,7 @@
   </div>
   <div class="headbox">
 
-    <h4> Search <br class="breakh4"> For a Restaurant </h4>
+    <h4> Restaurant Rater </h4>
 
     <form class="locationsform" ng-submit="locationsCtrl.search()">
        <img src="http://www.clker.com/cliparts/W/x/V/N/a/o/orange-pin-hi.png"/>
@@ -45,8 +45,10 @@
 
 
   <div class="undermaptext">
-    <div class="noresults" ng-if="locationsCtrl.places.length === 0">No Results Yet <br> Search For A Restaurant </div>
-    <a class="clickforresults" href="#bottominstructions" du-smooth-scroll duration="1000" ng-if="locationsCtrl.places.length > 0"> Click Here To View Results </a>
+    <!-- <div class="noresults" ng-if="locationsCtrl.places.length === 0">No Results Yet <br> Search For A Restaurant </div> -->
+    <input class="viewresultsbutton" type="button" value="View Results" href="#bottominstructions" du-smooth-scroll duration="1000" ng-if="locationsCtrl.places.length > 0">
+      <!-- <a class="clickforresults" href="#bottominstructions" du-smooth-scroll duration="1000" ng-if="locationsCtrl.places.length > 0"> Click Here To View Results </a> -->
+    </input>
   </div>
 
 </div>
